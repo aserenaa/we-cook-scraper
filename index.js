@@ -68,8 +68,13 @@ const scrapeMenu = async (url) => {
     return types.map(type => ({ type, nutritionFacts: nutritionFacts[type].nutritionFacts }))
   })
 
+  const mealIdentifier = url.split('/').pop()
+  const match = mealIdentifier.match(/(\d+)-(.*)/)
+  const id = match ? match[1] : mealIdentifier
+  const name = match ? match[2] : mealIdentifier
+
   await browser.close()
-  return { id: url.split('/').pop(), servings: data }
+  return { id, name, url, data }
 }
 
 /**
