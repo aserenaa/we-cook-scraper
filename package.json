@@ -1,13 +1,23 @@
 {
   "name": "we-cook-scraper",
   "version": "1.0.0",
-  "description": "WeCook web scraper to get week meals calories and macros.",
+  "description": "A powerful Node.js web scraper using Puppeteer to extract weekly meal plans, including calories and macros, from cooking websites. Ideal for nutrition tracking and meal planning.",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "web-scraper",
+    "puppeteer",
+    "cooking",
+    "recipes",
+    "nutrition",
+    "meal-planning",
+    "calories",
+    "macros"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aserenaa/we-cook-scraper.git"
