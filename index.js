@@ -31,7 +31,6 @@ const scrapeMenu = async (url) => {
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
 
-  page.on('console', msg => console.log('PAGE LOG:', msg.text()))
   await page.goto(url, { waitUntil: 'networkidle2' })
 
   console.log('Scraping:', url)
@@ -43,10 +42,8 @@ const scrapeMenu = async (url) => {
 
     rows.forEach(row => {
       const td = row.querySelector('td')
-      if (!td) {
-        console.log('No td element found')
-        return // Guard clause to handle missing td elements
-      }
+      if (!td) return // Guard clause to handle missing td elements
+
       const nutrient = td.innerText.trim().toLowerCase()
         .replace(/\s*\/\s*\w+\s*:/, '')
         .replace(/[\s_]+/g, '')
@@ -57,10 +54,7 @@ const scrapeMenu = async (url) => {
       const nutrientMeasure = nutrientMeasureRegex ? nutrientMeasureRegex[1] : ''
       types.forEach((type, index) => {
         const valueElement = row.querySelectorAll('td')[index + 1]
-        if (!valueElement) {
-          console.log('No value element found for', type, nutrient)
-          return // Safely handle missing elements
-        }
+        if (!valueElement) return // Safely handle missing elements
         const value = valueElement.innerText.trim()
         if (!nutritionFacts[type]) {
           nutritionFacts[type] = { nutritionFacts: {} }
@@ -94,7 +88,14 @@ const main = async () => {
     const urls = await extractUrls()
     const weekMenuURLs = filterWeekMenus(urls)
     console.log('Scraping week menus:', weekMenuURLs)
-    const weekMenusData = await Promise.all(weekMenuURLs.map(scrapeMenu))
+    const weekMenus = await Promise.all(weekMenuURLs.map(scrapeMenu))
+
+    const weekMenusData = {
+      date: weekMenuURLs[0].match(/(\d{4}-\d{2}-\d{2})/)[0],
+      numberOfWeekMenus: weekMenus.length,
+      weekMenus
+    }
+
     fs.writeFileSync('weekMenuData.json', JSON.stringify(weekMenusData, null, 2))
     console.log('Scraping completed. Data saved to weekMenuData.json')
   } catch (error) {
