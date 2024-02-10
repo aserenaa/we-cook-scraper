@@ -1,7 +1,6 @@
 import { scrapeMenu } from './scrapers/scrapeMenu.js'
 import { saveToJsonFile } from './services/fileService.js'
-import { extractUrls } from './utils/extractUrls.js'
-import { filterWeekMenus } from './utils/filterWeekMenus.js'
+import { extractUrls, filterWeekMenus } from './utils/index.js'
 
 /**
  * Orchestrates the web scraping process to collect week menu data from a specified sitemap URL.
