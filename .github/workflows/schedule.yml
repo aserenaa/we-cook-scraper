@@ -1,6 +1,8 @@
 name: Update Week Menu Data
 
 on:
+  pull_request:
+    branches: [ "main" ]
   schedule:
     - cron: '0 0 * * 6' # Runs at 00:00 UTC every Saturday
 
