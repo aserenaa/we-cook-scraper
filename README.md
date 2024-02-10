@@ -4,6 +4,6 @@ We Cook Scraper is a Node.js application designed to scrape cooking recipes from
 
 ## Features
 
-- **Recipe Extraction**: Automatically gathers recipes from a list of predefined websites.
+- **Recipe Extraction**: Automatically gathers recipes from WeCook every week.
 - **Data Normalization**: Converts the scraped data into a structured format.
-- **Export Options**: Offers the ability to save the scraped data in various formats (e.g., JSON, CSV).
+- **Export Options**: Offers the ability to save the scraped data in JSON format.
