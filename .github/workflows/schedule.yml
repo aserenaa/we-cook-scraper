@@ -24,8 +24,8 @@ jobs:
       run: npm run start
     - name: Commit and push if changes
       run: |
-        git config --global user.email "abraham.serena@hotmail.com"
-        git config --global user.name "Abraham Serena"
+        git config --global user.email abraham.serena@hotmail.com
+        git config --global user.name aserenaa
         git add data/weekMenuData.json
         git commit -m "[bot] Update weekMenuData.json" || exit 0  # This will exit gracefully if there's nothing to commit
         git push
