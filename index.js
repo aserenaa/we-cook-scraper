@@ -31,7 +31,10 @@ const scrapeMenu = async (url) => {
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
 
+  page.on('console', msg => console.log('PAGE LOG:', msg.text()))
   await page.goto(url, { waitUntil: 'networkidle2' })
+
+  console.log('Scraping:', url)
 
   const data = await page.evaluate(() => {
     const types = Array.from(document.querySelectorAll('#nutrition-facts thead th')).slice(1).map(th => th.innerText.trim().toLowerCase())
@@ -41,7 +44,7 @@ const scrapeMenu = async (url) => {
     rows.forEach(row => {
       const td = row.querySelector('td')
       if (!td) {
-        console.log(`No td element found on ${url}`)
+        console.log('No td element found')
         return // Guard clause to handle missing td elements
       }
       const nutrient = td.innerText.trim().toLowerCase()
@@ -55,7 +58,7 @@ const scrapeMenu = async (url) => {
       types.forEach((type, index) => {
         const valueElement = row.querySelectorAll('td')[index + 1]
         if (!valueElement) {
-          console.log(`No value element found for ${type} ${nutrient} on ${url}`)
+          console.log('No value element found for', type, nutrient)
           return // Safely handle missing elements
         }
         const value = valueElement.innerText.trim()
