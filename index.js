@@ -3,17 +3,29 @@ import puppeteer from 'puppeteer'
 
 const sitemapUrl = 'https://www.wecookmeals.ca/sitemap.xml'
 
-// Extract URLs from the sitemap
+/**
+ * Fetches and extracts URLs from the given sitemap URL.
+ * @returns {Promise<string[]>} A promise that resolves to an array of URLs extracted from the sitemap.
+ */
 const extractUrls = async () => {
   const response = await axios.get(sitemapUrl)
   const urls = response.data.match(/<loc>(.*?)<\/loc>/g) || []
   return urls.map(url => url.replace(/<\/?loc>/g, ''))
 }
 
-// Filter URLs to include only week menus
+/**
+ * Filters the URLs to include only those that contain 'en/week-menu/'.
+ * @param {string[]} urls - An array of URLs to filter.
+ * @returns {string[]} An array of filtered URLs that include week menus.
+ */
 const filterWeekMenus = (urls) => urls.filter(url => url.includes('en/week-menu/'))
 
-// Scrape menu data
+/**
+ * Scrapes the menu data from a given URL using Puppeteer.
+ * @param {string} url - The URL to scrape data from.
+ * @returns {Promise<Object>} A promise that resolves to an object containing the id and servings data.
+ */
+
 const scrapeMenu = async (url) => {
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
@@ -47,7 +59,9 @@ const scrapeMenu = async (url) => {
   return { id: url.split('/').pop(), servings: data }
 }
 
-// Main function to orchestrate the scraping
+/**
+ * The main function orchestrates the scraping process by extracting URLs, filtering for week menus, and scraping data for each week menu URL.
+ */
 const main = async () => {
   try {
     const urls = await extractUrls()
