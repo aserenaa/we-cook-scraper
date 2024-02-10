@@ -1,0 +1,26 @@
+name: Update Week Menu Data
+
+on:
+  schedule:
+    - cron: '0 0 * * 6' # Runs at 00:00 UTC every Saturday
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14'
+    - name: Install dependencies
+      run: npm install
+    - name: Run script
+      run: node path/to/your/script.js
+    - name: Commit and push if changes
+      run: |
+        git config --global user.email "abraham.serena@hotmail.com"
+        git config --global user.name "Abraham Serena"
+        git add data/weekMenuData.json
+        git commit -m "[bot] Update weekMenuData.json" || exit 0  # This will exit gracefully if there's nothing to commit
+        git push
