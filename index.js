@@ -74,7 +74,7 @@ const scrapeMenu = async (url) => {
   const name = match ? match[2] : mealIdentifier
 
   await browser.close()
-  return { id, name, url, data }
+  return { id, name, url, servings: data }
 }
 
 /**
