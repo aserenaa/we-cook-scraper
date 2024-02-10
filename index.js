@@ -33,21 +33,34 @@ const scrapeMenu = async (url) => {
   await page.goto(url, { waitUntil: 'networkidle2' })
 
   const data = await page.evaluate(() => {
-    const types = Array.from(document.querySelectorAll('thead th')).slice(1).map(th => th.innerText.trim().toLowerCase())
+    const types = Array.from(document.querySelectorAll('#nutrition-facts thead th')).slice(1).map(th => th.innerText.trim().toLowerCase())
     const rows = Array.from(document.querySelectorAll('#nutrition-facts tbody tr'))
     const nutritionFacts = {}
 
     rows.forEach(row => {
-      const nutrient = row.querySelector('td').innerText.trim().toLowerCase()
+      const td = row.querySelector('td')
+      if (!td) {
+        console.log(`No td element found on ${url}`)
+        return // Guard clause to handle missing td elements
+      }
+      const nutrient = td.innerText.trim().toLowerCase()
         .replace(/\s*\/\s*\w+\s*:/, '')
         .replace(/[\s_]+/g, '')
         .trimEnd('_')
         .trim()
 
-      const nutrientMeasure = row.querySelector('td').innerText.trim().match(/\/\s*(\w+)/) ? row.querySelector('td').innerText.trim().match(/\/\s*(\w+)/)[1] : ''
+      const nutrientMeasureRegex = td.innerText.trim().match(/\/\s*(\w+)/)
+      const nutrientMeasure = nutrientMeasureRegex ? nutrientMeasureRegex[1] : ''
       types.forEach((type, index) => {
-        const value = row.querySelectorAll('td')[index + 1].innerText.trim()
-        if (!nutritionFacts[type]) nutritionFacts[type] = { nutritionFacts: {} }
+        const valueElement = row.querySelectorAll('td')[index + 1]
+        if (!valueElement) {
+          console.log(`No value element found for ${type} ${nutrient} on ${url}`)
+          return // Safely handle missing elements
+        }
+        const value = valueElement.innerText.trim()
+        if (!nutritionFacts[type]) {
+          nutritionFacts[type] = { nutritionFacts: {} }
+        }
         nutritionFacts[type].nutritionFacts[nutrient] = `${value}${nutrientMeasure}`
       })
     })
