@@ -1,4 +1,5 @@
 import axios from 'axios'
+import fs from 'fs'
 import puppeteer from 'puppeteer'
 
 const sitemapUrl = 'https://www.wecookmeals.ca/sitemap.xml'
@@ -80,16 +81,19 @@ const scrapeMenu = async (url) => {
 /**
  * The main function orchestrates the scraping process by extracting URLs, filtering for week menus, and scraping data for each week menu URL.
  */
+// TODO:
+// - Order the weekMenusData by id
+// - Add Date
+// - Add error handling
+// - Check missing URLs
 const main = async () => {
   try {
     const urls = await extractUrls()
     const weekMenuURLs = filterWeekMenus(urls)
-    const weekMeals = await scrapeMenu(weekMenuURLs[0])
-    console.log(JSON.stringify(weekMeals, null, 2))
-    // for (const menuUrl of weekMenus) {
-    //   const weekMenu = await scrapeMenu(menuUrl)
-    //   console.log(menuUrl, JSON.stringify(weekMenu, null, 2))
-    // }
+    console.log('Scraping week menus:', weekMenuURLs)
+    const weekMenusData = await Promise.all(weekMenuURLs.map(scrapeMenu))
+    fs.writeFileSync('weekMenuData.json', JSON.stringify(weekMenusData, null, 2))
+    console.log('Scraping completed. Data saved to weekMenuData.json')
   } catch (error) {
     console.error('Error in main function:', error)
   }
