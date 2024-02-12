@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [ "main" ]
   schedule:
-    - cron: '0 0 1 * *' // Run every first day of the month at 00:00
+    - cron: '0 0 1 * *'  # Run at 00:00 on the first day of every month
 
 jobs:
   build:
