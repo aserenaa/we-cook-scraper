@@ -22,16 +22,15 @@ const main = async () => {
     }
 
     for (const date in weekMenuUrlsByDate) {
-      console.log(`Scraping ${weekMenuUrlsByDate[date]}`)
       const weekMenus = await Promise.all(weekMenuUrlsByDate[date].map(scrapeMenu))
       const weekMenusData = { date, numberOfWeekMenus: weekMenuUrlsByDate[date].length, weekMenus }
       saveToJsonFile(`weekMenuData-${date}.json`, weekMenusData)
-      console.log(`Scraping completed for ${date}. Data saved to weekMenuData-${date}.json`)
+      console.info(`Scraping completed for ${date}.`)
     }
 
-    throw new Error('No week menu URLs found')
+    console.info('Scraping completed. Data saved to weekMenuData files.')
   } catch (error) {
-    throw new Error(`An error occurred: ${error.message}`)
+    console.error('Error:', error.message)
   }
 }
 

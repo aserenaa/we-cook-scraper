@@ -18,6 +18,7 @@ import puppeteer from 'puppeteer'
  * name, URL, and servings data extracted from the nutrition facts table. Returns null if an error occurs.
  */
 export const scrapeMenu = async (url) => {
+  console.info(`Scraping menu data from ${url}`)
   let browser
   try {
     browser = await puppeteer.launch()
