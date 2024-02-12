@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { sitemapUrl } from '../config.js'
+import { sitemapUrl, weekMenuUrl } from '../config.js'
 
 /**
  * Fetches and extracts URLs from a specified sitemap URL. It attempts to retrieve the sitemap content
@@ -17,4 +17,16 @@ export const extractUrls = async () => {
   } catch (error) {
     throw new Error(`Error extracting URLs: ${error}`)
   }
+}
+
+/**
+ * Constructs a URL for a week menu page using the specified date. The URL is constructed by appending
+ * the date to the base week menu URL. The date is formatted as 'YYYY-MM-DD' and is used as the path
+ * parameter in the URL.
+ *
+ * @param {string} date A string representing the date in 'YYYY-MM-DD' format.
+ * @returns {string} A string URL for a week menu page.
+ */
+export const buildUrlByDate = (date) => {
+  return `${weekMenuUrl}/${date}`
 }
