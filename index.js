@@ -1,6 +1,7 @@
 import { scrapeMenu } from './scrapers/scrapeMenu.js'
+import { scrapeMenuLinksByDate } from './scrapers/scrapeUrls.js'
 import { saveToJsonFile } from './services/fileService.js'
-import { extractUrls, filterWeekMenus } from './utils/index.js'
+import { getMondaysOfMonth } from './utils/index.js'
 
 /**
  * Orchestrates the web scraping process to collect week menu data from a specified sitemap URL.
@@ -13,22 +14,24 @@ import { extractUrls, filterWeekMenus } from './utils/index.js'
  */
 const main = async () => {
   try {
-    console.log('Scraping week menus...')
-    const urls = await extractUrls()
-    const weekMenuURLs = filterWeekMenus(urls)
-    if (!weekMenuURLs.length) {
-      console.log('No week menus found.')
-      return
+    const currentDate = new Date()
+    const currentMondaysOfMonth = getMondaysOfMonth(currentDate.getFullYear(), currentDate.getMonth())
+    const weekMenuUrlsByDate = {}
+    for (const date of currentMondaysOfMonth) {
+      weekMenuUrlsByDate[date] = await scrapeMenuLinksByDate(date)
     }
 
-    const weekMenus = await Promise.all(weekMenuURLs.map(scrapeMenu))
-    const date = weekMenuURLs[0].match(/(\d{4}-\d{2}-\d{2})/)?.[0] || 'Unknown Date'
-    const weekMenusData = { date, numberOfWeekMenus: weekMenus.length, weekMenus }
+    for (const date in weekMenuUrlsByDate) {
+      console.log(`Scraping ${weekMenuUrlsByDate[date]}`)
+      const weekMenus = await Promise.all(weekMenuUrlsByDate[date].map(scrapeMenu))
+      const weekMenusData = { date, numberOfWeekMenus: weekMenuUrlsByDate[date].length, weekMenus }
+      saveToJsonFile(`weekMenuData-${date}.json`, weekMenusData)
+      console.log(`Scraping completed for ${date}. Data saved to weekMenuData-${date}.json`)
+    }
 
-    saveToJsonFile('weekMenuData.json', weekMenusData)
-    console.log('Scraping completed. Data saved to weekMenuData.json')
+    throw new Error('No week menu URLs found')
   } catch (error) {
-    console.error('Error:', error.message)
+    throw new Error(`An error occurred: ${error.message}`)
   }
 }
 
