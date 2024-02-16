@@ -1,5 +1,5 @@
-import puppeteer from 'puppeteer'
 import { weekMenuUrl } from '../config.js'
+import { initializeAndNavigate } from '../utils/index.js'
 
 /**
  * Scrapes menu links from a specific date's page on the week menu website.
@@ -11,10 +11,8 @@ import { weekMenuUrl } from '../config.js'
  */
 export const scrapeMenuLinksByDate = async (date) => {
   const url = `${weekMenuUrl}/${date}`
-  let browser
   try {
-    browser = await puppeteer.launch()
-    const page = await browser.newPage()
+    const { browser, page } = await initializeAndNavigate(url)
 
     const response = await page.goto(url, { waitUntil: 'networkidle2' })
     if (!response || response.status() !== 200) {
@@ -30,11 +28,10 @@ export const scrapeMenuLinksByDate = async (date) => {
       return anchors.map(anchor => anchor.href)
     })
 
+    await browser.close()
     return links
   } catch (error) {
     console.error(`Error scraping ${url}:`, error)
     return []
-  } finally {
-    await browser?.close()
   }
 }
