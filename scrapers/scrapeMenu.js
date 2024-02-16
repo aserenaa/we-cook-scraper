@@ -41,8 +41,9 @@ export const newScrapeMenu = async (url) => {
 
         factsRows.forEach(row => {
           const nutrientKey = row.innerText.trim().toLowerCase()
-          const nutrientValue = row.nextSibling ? row.nextSibling.textContent.trim().toLowerCase() : 'N/A'
-          servingNutrients[nutrientKey] = nutrientValue.trim()
+          let nutrientValue = row.nextSibling ? row.nextSibling.textContent.trim().toLowerCase() : 'N/A'
+          nutrientValue = nutrientValue.replace(/\s+/g, '')
+          servingNutrients[nutrientKey] = nutrientValue
         })
 
         nutrients[servingType] = servingNutrients
