@@ -10,30 +10,16 @@
         "small": {
           "calories": "480",
           "fat": "14g",
-          "saturated_fat": "6g",
-          "trans": "0.2g",
           "carbohydrate": "56g",
-          "fibre": "3g",
-          "sugars": "8g",
           "protein": "31g",
-          "potassium": "800mg",
-          "calcium": "250mg",
-          "iron": "1.75mg",
           "cholesterol": "80mg",
           "sodium": "700mg"
         },
         "regular": {
           "calories": "610",
           "fat": "17g",
-          "saturated_fat": "7g",
-          "trans": "0.2g",
           "carbohydrate": "59g",
-          "fibre": "4g",
-          "sugars": "10g",
           "protein": "50g",
-          "potassium": "1100mg",
-          "calcium": "300mg",
-          "iron": "2.25mg",
           "cholesterol": "145mg",
           "sodium": "930mg"
         }
@@ -47,31 +33,17 @@
         "small": {
           "calories": "510",
           "fat": "20g",
-          "saturated_fat": "7g",
-          "trans": "undefinedg",
           "carbohydrate": "53g",
-          "fibre": "6g",
-          "sugars": "6g",
           "protein": "26g",
-          "potassium": "600mg",
-          "calcium": "225mg",
-          "iron": "4mg",
-          "cholesterol": "undefinedmg",
+          "cholesterol": "0mg",
           "sodium": "500mg"
         },
         "regular": {
           "calories": "730",
           "fat": "35g",
-          "saturated_fat": "10g",
-          "trans": "undefinedg",
           "carbohydrate": "59g",
-          "fibre": "9g",
-          "sugars": "7g",
           "protein": "45g",
-          "potassium": "850mg",
-          "calcium": "400mg",
-          "iron": "6mg",
-          "cholesterol": "undefinedmg",
+          "cholesterol": "0mg",
           "sodium": "740mg"
         }
       }
@@ -84,30 +56,16 @@
         "small": {
           "calories": "380",
           "fat": "14g",
-          "saturated_fat": "5g",
-          "trans": "0.5g",
           "carbohydrate": "45g",
-          "fibre": "6g",
-          "sugars": "8g",
           "protein": "18g",
-          "potassium": "800mg",
-          "calcium": "100mg",
-          "iron": "2.5mg",
           "cholesterol": "45mg",
           "sodium": "810mg"
         },
         "regular": {
           "calories": "560",
           "fat": "26g",
-          "saturated_fat": "9g",
-          "trans": "1g",
           "carbohydrate": "51g",
-          "fibre": "7g",
-          "sugars": "9g",
           "protein": "31g",
-          "potassium": "1000mg",
-          "calcium": "125mg",
-          "iron": "3mg",
           "cholesterol": "90mg",
           "sodium": "1150mg"
         }
@@ -121,30 +79,16 @@
         "small": {
           "calories": "560",
           "fat": "27g",
-          "saturated_fat": "2g",
-          "trans": "0.5g",
           "carbohydrate": "51g",
-          "fibre": "7g",
-          "sugars": "12g",
           "protein": "29g",
-          "potassium": "800mg",
-          "calcium": "125mg",
-          "iron": "3mg",
           "cholesterol": "145mg",
           "sodium": "550mg"
         },
         "regular": {
           "calories": "700",
           "fat": "32g",
-          "saturated_fat": "3g",
-          "trans": "0.5g",
           "carbohydrate": "61g",
-          "fibre": "8g",
-          "sugars": "15g",
           "protein": "41g",
-          "potassium": "950mg",
-          "calcium": "175mg",
-          "iron": "4mg",
           "cholesterol": "215mg",
           "sodium": "730mg"
         }
@@ -152,36 +96,22 @@
     },
     {
       "id": "5",
-      "name": "Roasted salmon tartare sauce 1",
+      "name": "Roasted salmon, tartare sauce",
       "url": "https://www.wecookmeals.ca/en/week-menu/2024-02-26/5-roasted-salmon-tartare-sauce-1",
       "servings": {
         "small": {
           "calories": "510",
           "fat": "25g",
-          "saturated_fat": "5g",
-          "trans": "undefinedg",
           "carbohydrate": "38g",
-          "fibre": "5g",
-          "sugars": "8g",
           "protein": "32g",
-          "potassium": "1200mg",
-          "calcium": "45mg",
-          "iron": "2mg",
           "cholesterol": "75mg",
           "sodium": "630mg"
         },
         "regular": {
           "calories": "790",
           "fat": "43g",
-          "saturated_fat": "9g",
-          "trans": "undefinedg",
           "carbohydrate": "39g",
-          "fibre": "5g",
-          "sugars": "8g",
           "protein": "58g",
-          "potassium": "1700mg",
-          "calcium": "70mg",
-          "iron": "2mg",
           "cholesterol": "145mg",
           "sodium": "840mg"
         }
@@ -189,36 +119,22 @@
     },
     {
       "id": "6",
-      "name": "Grilled philly cheesesteak",
+      "name": "Grilled “Philly Cheesesteak”",
       "url": "https://www.wecookmeals.ca/en/week-menu/2024-02-26/6-grilled-philly-cheesesteak",
       "servings": {
         "small": {
           "calories": "500",
           "fat": "23g",
-          "saturated_fat": "8g",
-          "trans": "0.5g",
           "carbohydrate": "40g",
-          "fibre": "5g",
-          "sugars": "6g",
           "protein": "34g",
-          "potassium": "1100mg",
-          "calcium": "100mg",
-          "iron": "4mg",
           "cholesterol": "90mg",
           "sodium": "540mg"
         },
         "regular": {
           "calories": "800",
           "fat": "41g",
-          "saturated_fat": "14g",
-          "trans": "1g",
           "carbohydrate": "42g",
-          "fibre": "5g",
-          "sugars": "6g",
           "protein": "63g",
-          "potassium": "1500mg",
-          "calcium": "175mg",
-          "iron": "7mg",
           "cholesterol": "180mg",
           "sodium": "820mg"
         }
@@ -226,36 +142,22 @@
     },
     {
       "id": "7",
-      "name": "Spaghetti bolognese 1",
+      "name": "Spaghetti Bolognese",
       "url": "https://www.wecookmeals.ca/en/week-menu/2024-02-26/7-spaghetti-bolognese-1",
       "servings": {
         "small": {
           "calories": "730",
           "fat": "31g",
-          "saturated_fat": "10g",
-          "trans": "1g",
           "carbohydrate": "60g",
-          "fibre": "4g",
-          "sugars": "3g",
           "protein": "45g",
-          "potassium": "500mg",
-          "calcium": "40mg",
-          "iron": "6mg",
           "cholesterol": "110mg",
           "sodium": "830mg"
         },
         "regular": {
           "calories": "940",
           "fat": "39g",
-          "saturated_fat": "12g",
-          "trans": "1.5g",
           "carbohydrate": "77g",
-          "fibre": "6g",
-          "sugars": "4g",
           "protein": "58g",
-          "potassium": "600mg",
-          "calcium": "50mg",
-          "iron": "8mg",
           "cholesterol": "140mg",
           "sodium": "1070mg"
         }
@@ -263,73 +165,45 @@
     },
     {
       "id": "8",
-      "name": "Vegetarian spring roll salad with spicy peanut dressing",
+      "name": "Vegetarian “spring roll” salad with spicy peanut dressing",
       "url": "https://www.wecookmeals.ca/en/week-menu/2024-02-26/8-vegetarian-spring-roll-salad-with-spicy-peanut-dressing",
       "servings": {
         "small": {
           "calories": "460",
           "fat": "19g",
-          "saturated_fat": "4g",
-          "trans": "undefinedg",
           "carbohydrate": "58g",
-          "fibre": "8g",
-          "sugars": "11g",
           "protein": "15g",
-          "potassium": "750mg",
-          "calcium": "100mg",
-          "iron": "2mg",
-          "cholesterol": "undefinedmg",
+          "cholesterol": "0mg",
           "sodium": "370mg"
         },
         "regular": {
           "calories": "560",
           "fat": "24g",
-          "saturated_fat": "6g",
-          "trans": "undefinedg",
           "carbohydrate": "71g",
-          "fibre": "10g",
-          "sugars": "15g",
           "protein": "19g",
-          "potassium": "950mg",
-          "calcium": "125mg",
-          "iron": "3mg",
-          "cholesterol": "undefinedmg",
+          "cholesterol": "0mg",
           "sodium": "530mg"
         }
       }
     },
     {
       "id": "9",
-      "name": "Mediterranean style orzo salad with grilled turkey breast",
+      "name": "Mediterranean-style orzo salad with grilled turkey breast",
       "url": "https://www.wecookmeals.ca/en/week-menu/2024-02-26/9-mediterranean-style-orzo-salad-with-grilled-turkey-breast",
       "servings": {
         "small": {
           "calories": "400",
           "fat": "14g",
-          "saturated_fat": "2g",
-          "trans": "undefinedg",
           "carbohydrate": "41g",
-          "fibre": "4g",
-          "sugars": "5g",
           "protein": "29g",
-          "potassium": "800mg",
-          "calcium": "40mg",
-          "iron": "1mg",
           "cholesterol": "55mg",
           "sodium": "440mg"
         },
         "regular": {
           "calories": "510",
           "fat": "19g",
-          "saturated_fat": "3g",
-          "trans": "undefinedg",
           "carbohydrate": "42g",
-          "fibre": "4g",
-          "sugars": "6g",
           "protein": "41g",
-          "potassium": "1000mg",
-          "calcium": "40mg",
-          "iron": "1mg",
           "cholesterol": "80mg",
           "sodium": "640mg"
         }
@@ -337,36 +211,22 @@
     },
     {
       "id": "10",
-      "name": "Grilled piri piri chicken thighs",
+      "name": "Grilled piri-piri chicken thighs",
       "url": "https://www.wecookmeals.ca/en/week-menu/2024-02-26/10-grilled-piri-piri-chicken-thighs",
       "servings": {
         "small": {
           "calories": "640",
           "fat": "41g",
-          "saturated_fat": "6g",
-          "trans": "0.2g",
           "carbohydrate": "35g",
-          "fibre": "4g",
-          "sugars": "6g",
           "protein": "30g",
-          "potassium": "1000mg",
-          "calcium": "20mg",
-          "iron": "2mg",
           "cholesterol": "135mg",
           "sodium": "740mg"
         },
         "regular": {
           "calories": "770",
           "fat": "46g",
-          "saturated_fat": "7g",
-          "trans": "0.2g",
           "carbohydrate": "35g",
-          "fibre": "4g",
-          "sugars": "6g",
           "protein": "49g",
-          "potassium": "1250mg",
-          "calcium": "45mg",
-          "iron": "3mg",
           "cholesterol": "230mg",
           "sodium": "980mg"
         }
@@ -374,36 +234,22 @@
     },
     {
       "id": "11",
-      "name": "Souvlaki grilled pork filet tzatziki sauce",
+      "name": "Souvlaki grilled pork filet, tzatziki sauce",
       "url": "https://www.wecookmeals.ca/en/week-menu/2024-02-26/11-souvlaki-grilled-pork-filet-tzatziki-sauce",
       "servings": {
         "small": {
           "calories": "480",
           "fat": "19g",
-          "saturated_fat": "6g",
-          "trans": "0.1g",
           "carbohydrate": "45g",
-          "fibre": "4g",
-          "sugars": "10g",
           "protein": "35g",
-          "potassium": "1250mg",
-          "calcium": "105mg",
-          "iron": "2.5mg",
           "cholesterol": "90mg",
           "sodium": "830mg"
         },
         "regular": {
           "calories": "660",
           "fat": "25g",
-          "saturated_fat": "8g",
-          "trans": "0.2g",
           "carbohydrate": "48g",
-          "fibre": "5g",
-          "sugars": "11g",
           "protein": "60g",
-          "potassium": "1700mg",
-          "calcium": "130mg",
-          "iron": "4mg",
           "cholesterol": "160mg",
           "sodium": "1090mg"
         }
@@ -411,36 +257,22 @@
     },
     {
       "id": "12",
-      "name": "Beef meatballs mushroom supreme sauce",
+      "name": "Beef meatballs, mushroom supreme sauce",
       "url": "https://www.wecookmeals.ca/en/week-menu/2024-02-26/12-beef-meatballs-mushroom-supreme-sauce",
       "servings": {
         "small": {
           "calories": "440",
           "fat": "18g",
-          "saturated_fat": "7g",
-          "trans": "0.5g",
           "carbohydrate": "42g",
-          "fibre": "4g",
-          "sugars": "6g",
           "protein": "28g",
-          "potassium": "750mg",
-          "calcium": "100mg",
-          "iron": "3mg",
           "cholesterol": "65mg",
           "sodium": "580mg"
         },
         "regular": {
           "calories": "620",
           "fat": "29g",
-          "saturated_fat": "11g",
-          "trans": "1g",
           "carbohydrate": "47g",
-          "fibre": "5g",
-          "sugars": "6g",
           "protein": "42g",
-          "potassium": "950mg",
-          "calcium": "125mg",
-          "iron": "5mg",
           "cholesterol": "110mg",
           "sodium": "870mg"
         }
@@ -454,30 +286,16 @@
         "small": {
           "calories": "410",
           "fat": "18g",
-          "saturated_fat": "6g",
-          "trans": "0.4g",
           "carbohydrate": "40g",
-          "fibre": "5g",
-          "sugars": "6g",
           "protein": "21g",
-          "potassium": "550mg",
-          "calcium": "150mg",
-          "iron": "3mg",
           "cholesterol": "55mg",
           "sodium": "610mg"
         },
         "regular": {
           "calories": "590",
           "fat": "28g",
-          "saturated_fat": "9g",
-          "trans": "1g",
           "carbohydrate": "49g",
-          "fibre": "7g",
-          "sugars": "9g",
           "protein": "35g",
-          "potassium": "750mg",
-          "calcium": "175mg",
-          "iron": "4mg",
           "cholesterol": "90mg",
           "sodium": "870mg"
         }
@@ -485,36 +303,22 @@
     },
     {
       "id": "14",
-      "name": "Grilled chicken breast spicy mango dip",
+      "name": "Grilled chicken breast, spicy mango dip",
       "url": "https://www.wecookmeals.ca/en/week-menu/2024-02-26/14-grilled-chicken-breast-spicy-mango-dip",
       "servings": {
         "small": {
           "calories": "400",
           "fat": "11g",
-          "saturated_fat": "2g",
-          "trans": "undefinedg",
           "carbohydrate": "41g",
-          "fibre": "4g",
-          "sugars": "11g",
           "protein": "31g",
-          "potassium": "1150mg",
-          "calcium": "20mg",
-          "iron": "2mg",
           "cholesterol": "90mg",
           "sodium": "630mg"
         },
         "regular": {
           "calories": "540",
           "fat": "14g",
-          "saturated_fat": "3g",
-          "trans": "undefinedg",
           "carbohydrate": "43g",
-          "fibre": "4g",
-          "sugars": "11g",
           "protein": "57g",
-          "potassium": "1550mg",
-          "calcium": "45mg",
-          "iron": "2mg",
           "cholesterol": "175mg",
           "sodium": "930mg"
         }
@@ -528,30 +332,16 @@
         "small": {
           "calories": "630",
           "fat": "20g",
-          "saturated_fat": "10g",
-          "trans": "0.2g",
           "carbohydrate": "80g",
-          "fibre": "5g",
-          "sugars": "7g",
           "protein": "27g",
-          "potassium": "350mg",
-          "calcium": "125mg",
-          "iron": "3mg",
           "cholesterol": "60mg",
           "sodium": "560mg"
         },
         "regular": {
           "calories": "810",
           "fat": "28g",
-          "saturated_fat": "14g",
-          "trans": "0.3g",
           "carbohydrate": "97g",
-          "fibre": "7g",
-          "sugars": "9g",
           "protein": "35g",
-          "potassium": "450mg",
-          "calcium": "175mg",
-          "iron": "4mg",
           "cholesterol": "85mg",
           "sodium": "800mg"
         }
