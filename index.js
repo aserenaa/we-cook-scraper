@@ -1,36 +1,69 @@
+import { createInterface } from 'readline'
 import { newScrapeMenu } from './scrapers/scrapeMenu.js'
 import { scrapeMenuLinksByDate } from './scrapers/scrapeUrls.js'
 import { saveToJsonFile } from './services/fileService.js'
 import { getMondaysOfMonth } from './utils/index.js'
 
+const rl = createInterface({
+  input: process.stdin,
+  output: process.stdout
+})
+
 /**
- * Orchestrates the web scraping process to collect week menu data from a specified sitemap URL.
- * It first extracts all URLs from the sitemap, filters them to retain only week menu URLs,
- * and then concurrently scrapes data from each filtered URL. The collected data includes
- * the date extracted from the URL, the total number of week menus scraped, and detailed
- * information about each menu. This data is then saved to 'weekMenuData.json', overwriting
- * the file if it already exists. If no week menu URLs are found, it logs a message and exits.
- * Errors encountered during the process are caught and logged.
+ * Prompts the user with a question and returns the response.
+ * @param {string} question - The question to prompt the user with.
+ * @returns {Promise<string>} A promise that resolves with the user's response.
+ */
+const askQuestion = (question) => new Promise(resolve => rl.question(question, resolve))
+
+/**
+ * Orchestrates the web scraping process based on user selection. It supports scraping for a specific date
+ * or for Mondays of the current and next month. The scraped data is saved to individual JSON files named
+ * after the date of the week menu.
  */
 const main = async () => {
   try {
-    const currentDate = new Date()
-    const currentMondaysOfMonth = getMondaysOfMonth(currentDate.getFullYear(), currentDate.getMonth())
-    const weekMenuUrlsByDate = {}
-    for (const date of currentMondaysOfMonth) {
-      weekMenuUrlsByDate[date] = await scrapeMenuLinksByDate(date)
+    const choice = await askQuestion('Select option:\n1. Run for a specific date\n2. Run for the current and next month\nEnter option number (1 or 2): ')
+
+    let datesToScrape = []
+
+    switch (choice.trim()) {
+      case '1': {
+        const specificDates = await askQuestion('Enter Monday dates separated by space with the format YYYY-MM-DD (e.g. 2021-08-02 2021-08-09): ')
+        datesToScrape = specificDates.split(' ')
+        console.info('Running for specific dates:', datesToScrape)
+        break
+      }
+      case '2': {
+        const currentDate = new Date()
+        datesToScrape = getMondaysOfMonth(currentDate.getFullYear(), currentDate.getMonth())
+          .concat(getMondaysOfMonth(currentDate.getFullYear(), currentDate.getMonth() + 1))
+        console.info('Running for the current and next month')
+        break
+      }
+      default: {
+        console.error('Invalid option. Exiting.')
+        rl.close()
+        return
+      }
     }
 
-    for (const date in weekMenuUrlsByDate) {
-      const weekMenus = await Promise.all(weekMenuUrlsByDate[date].map(newScrapeMenu))
-      const weekMenusData = { date, numberOfWeekMenus: weekMenuUrlsByDate[date].length, weekMenus }
-      saveToJsonFile(`weekMenuData-${date}.json`, weekMenusData)
-      console.info(`Scraping completed for ${date}.`)
+    for (const date of datesToScrape) {
+      const weekMenuUrls = await scrapeMenuLinksByDate(date)
+      if (weekMenuUrls.length === 0) {
+        console.log(`No URLs found for ${date}. Skipping.`)
+        continue
+      }
+      const weekMenus = await Promise.all(weekMenuUrls.map(url => newScrapeMenu(url)))
+      await saveToJsonFile(`weekMenuData-${date}.json`, { date, numberOfWeekMenus: weekMenus.length, weekMenus })
+      console.info(`Scraping completed for ${date}. Data saved to weekMenuData-${date}.json`)
     }
 
-    console.info('Scraping completed. Data saved to weekMenuData files.')
+    console.info('Scraping process completed.')
   } catch (error) {
-    console.error('Error:', error.message)
+    console.error('Error during the scraping process:', error.message)
+  } finally {
+    rl.close()
   }
 }
 
