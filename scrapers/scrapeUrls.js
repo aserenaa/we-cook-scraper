@@ -14,17 +14,9 @@ export const scrapeMenuLinksByDate = async (date) => {
   try {
     const { browser, page } = await initializeAndNavigate(url)
 
-    const response = await page.goto(url, { waitUntil: 'networkidle2' })
-    if (!response || response.status() !== 200) {
-      throw new Error(`Page not found or error loading page: ${url}`)
-    }
-
     const links = await page.evaluate(() => {
       const anchors = Array.from(document.querySelectorAll('a.h-full'))
-      if (anchors.length === 0) {
-        console.warn('No anchor tags found with the class h-full.')
-        return []
-      }
+      if (anchors.length === 0) return []
       return anchors.map(anchor => anchor.href)
     })
 

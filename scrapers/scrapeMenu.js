@@ -21,10 +21,8 @@ export const newScrapeMenu = async (url) => {
   try {
     const { browser, page } = await initializeAndNavigate(url)
 
-    // Initialize weekMenu here to capture the URL and potentially other details
     let weekMenu = { id: '', name: '', url, servings: {} }
 
-    // Extract the name and servings data within page.evaluate
     const { name, servings } = await page.evaluate(async () => {
       const nutrients = {}
       const buttonSelectors = Array.from(document.querySelectorAll('div.facts-container div.swiper-slide button'))
@@ -44,7 +42,7 @@ export const newScrapeMenu = async (url) => {
         factsRows.forEach(row => {
           const nutrientKey = row.innerText.trim().toLowerCase()
           const nutrientValue = row.nextSibling ? row.nextSibling.textContent.trim().toLowerCase() : 'N/A'
-          servingNutrients[nutrientKey] = nutrientValue
+          servingNutrients[nutrientKey] = nutrientValue.trim()
         })
 
         nutrients[servingType] = servingNutrients
@@ -53,7 +51,6 @@ export const newScrapeMenu = async (url) => {
       return { name: menuName, servings: nutrients }
     })
 
-    // Extract ID and potentially adjust the name from the URL if necessary
     const [id, ...nameParts] = url.split('/').pop().split('-')
     weekMenu = { ...weekMenu, id, name: name || nameParts.join(' ').charAt(0).toUpperCase() + nameParts.join(' ').slice(1), servings }
 
