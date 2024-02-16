@@ -1,4 +1,4 @@
-import { scrapeMenu } from './scrapers/scrapeMenu.js'
+import { newScrapeMenu } from './scrapers/scrapeMenu.js'
 import { scrapeMenuLinksByDate } from './scrapers/scrapeUrls.js'
 import { saveToJsonFile } from './services/fileService.js'
 import { getMondaysOfMonth } from './utils/index.js'
@@ -22,7 +22,7 @@ const main = async () => {
     }
 
     for (const date in weekMenuUrlsByDate) {
-      const weekMenus = await Promise.all(weekMenuUrlsByDate[date].map(scrapeMenu))
+      const weekMenus = await Promise.all(weekMenuUrlsByDate[date].map(newScrapeMenu))
       const weekMenusData = { date, numberOfWeekMenus: weekMenuUrlsByDate[date].length, weekMenus }
       saveToJsonFile(`weekMenuData-${date}.json`, weekMenusData)
       console.info(`Scraping completed for ${date}.`)
