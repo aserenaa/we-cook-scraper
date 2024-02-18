@@ -1,0 +1,351 @@
+{
+  "date": "2024-03-11",
+  "numberOfWeekMenus": 15,
+  "weekMenus": [
+    {
+      "id": "218",
+      "name": "Red curry grilled chicken bowl",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-03-11/218-1-red-curry-grilled-chicken-bowl",
+      "servings": {
+        "small": {
+          "calories": "440",
+          "fat": "16g",
+          "carbohydrate": "43g",
+          "protein": "30g",
+          "cholesterol": "115mg",
+          "sodium": "570mg"
+        },
+        "regular": {
+          "calories": "610",
+          "fat": "24g",
+          "carbohydrate": "48g",
+          "protein": "48g",
+          "cholesterol": "205mg",
+          "sodium": "940mg"
+        }
+      }
+    },
+    {
+      "id": "218",
+      "name": "Ramen tofu bowl",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-03-11/218-2-ramen-tofu-bowl",
+      "servings": {
+        "small": {
+          "calories": "410",
+          "fat": "12g",
+          "carbohydrate": "53g",
+          "protein": "26g",
+          "cholesterol": "0mg",
+          "sodium": "650mg"
+        },
+        "regular": {
+          "calories": "590",
+          "fat": "22g",
+          "carbohydrate": "58g",
+          "protein": "44g",
+          "cholesterol": "0mg",
+          "sodium": "830mg"
+        }
+      }
+    },
+    {
+      "id": "218",
+      "name": "Italian-style pulled pork with all’arrabbiata pasta",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-03-11/218-3-italian-style-pulled-pork-with-allarrabbiata-pasta",
+      "servings": {
+        "small": {
+          "calories": "490",
+          "fat": "21g",
+          "carbohydrate": "50g",
+          "protein": "23g",
+          "cholesterol": "50mg",
+          "sodium": "410mg"
+        },
+        "regular": {
+          "calories": "620",
+          "fat": "30g",
+          "carbohydrate": "54g",
+          "protein": "34g",
+          "cholesterol": "90mg",
+          "sodium": "520mg"
+        }
+      }
+    },
+    {
+      "id": "218",
+      "name": "Shrimp spring roll salad with spicy peanut sauce",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-03-11/218-4-shrimp-spring-roll-salad-with-spicy-peanut-sauce",
+      "servings": {
+        "small": {
+          "calories": "480",
+          "fat": "20g",
+          "carbohydrate": "46g",
+          "protein": "30g",
+          "cholesterol": "155mg",
+          "sodium": "570mg"
+        },
+        "regular": {
+          "calories": "580",
+          "fat": "24g",
+          "carbohydrate": "49g",
+          "protein": "41g",
+          "cholesterol": "230mg",
+          "sodium": "820mg"
+        }
+      }
+    },
+    {
+      "id": "218",
+      "name": "Steak spiced roasted salmon, Béarnaise-style mayo",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-03-11/218-5-steak-spiced-roasted-salmon-bearnaise-style-mayo",
+      "servings": {
+        "small": {
+          "calories": "600",
+          "fat": "34g",
+          "carbohydrate": "38g",
+          "protein": "32g",
+          "cholesterol": "80mg",
+          "sodium": "590mg"
+        },
+        "regular": {
+          "calories": "880",
+          "fat": "52g",
+          "carbohydrate": "39g",
+          "protein": "58g",
+          "cholesterol": "150mg",
+          "sodium": "800mg"
+        }
+      }
+    },
+    {
+      "id": "218",
+      "name": "Grilled beef steak, roasted onion sauce",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-03-11/218-6-grilled-beef-steak-roasted-onion-sauce",
+      "servings": {
+        "small": {
+          "calories": "490",
+          "fat": "23g",
+          "carbohydrate": "36g",
+          "protein": "31g",
+          "cholesterol": "90mg",
+          "sodium": "630mg"
+        },
+        "regular": {
+          "calories": "750",
+          "fat": "40g",
+          "carbohydrate": "40g",
+          "protein": "58g",
+          "cholesterol": "170mg",
+          "sodium": "970mg"
+        }
+      }
+    },
+    {
+      "id": "218",
+      "name": "Poultry and mushroom Bolognese pasta",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-03-11/218-7-poultry-and-mushroom-bolognese-pasta",
+      "servings": {
+        "small": {
+          "calories": "520",
+          "fat": "17g",
+          "carbohydrate": "70g",
+          "protein": "24g",
+          "cholesterol": "70mg",
+          "sodium": "470mg"
+        },
+        "regular": {
+          "calories": "720",
+          "fat": "27g",
+          "carbohydrate": "92g",
+          "protein": "35g",
+          "cholesterol": "110mg",
+          "sodium": "740mg"
+        }
+      }
+    },
+    {
+      "id": "218",
+      "name": "Kale and butternut squash salad with smoked nuts, Boursin cheese and apple vinaigrette",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-03-11/218-8-kale-and-butternut-squash-salad-with-smoked-nuts-boursin-cheese-and-apple-vinaigrette",
+      "servings": {
+        "small": {
+          "calories": "540",
+          "fat": "47g",
+          "carbohydrate": "27g",
+          "protein": "10g",
+          "cholesterol": "25mg",
+          "sodium": "530mg"
+        },
+        "regular": {
+          "calories": "670",
+          "fat": "59g",
+          "carbohydrate": "33g",
+          "protein": "12g",
+          "cholesterol": "25mg",
+          "sodium": "620mg"
+        }
+      }
+    },
+    {
+      "id": "218",
+      "name": "Cold Italian antipasto salad",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-03-11/218-9-cold-italian-antipasto-salad",
+      "servings": {
+        "small": {
+          "calories": "570",
+          "fat": "31g",
+          "carbohydrate": "60g",
+          "protein": "17g",
+          "cholesterol": "10mg",
+          "sodium": "750mg"
+        },
+        "regular": {
+          "calories": "740",
+          "fat": "40g",
+          "carbohydrate": "77g",
+          "protein": "20g",
+          "cholesterol": "10mg",
+          "sodium": "960mg"
+        }
+      }
+    },
+    {
+      "id": "218",
+      "name": "Chipotle grilled chicken thighs, ranch sauce",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-03-11/218-10-chipotle-grilled-chicken-thighs-ranch-sauce",
+      "servings": {
+        "small": {
+          "calories": "360",
+          "fat": "6g",
+          "carbohydrate": "47g",
+          "protein": "29g",
+          "cholesterol": "130mg",
+          "sodium": "600mg"
+        },
+        "regular": {
+          "calories": "530",
+          "fat": "15g",
+          "carbohydrate": "51g",
+          "protein": "46g",
+          "cholesterol": "210mg",
+          "sodium": "820mg"
+        }
+      }
+    },
+    {
+      "id": "218",
+      "name": "Grilled pork filet, dark BBQ sauce",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-03-11/218-11-grilled-pork-filet-dark-bbq-sauce",
+      "servings": {
+        "small": {
+          "calories": "480",
+          "fat": "16g",
+          "carbohydrate": "56g",
+          "protein": "33g",
+          "cholesterol": "95mg",
+          "sodium": "670mg"
+        },
+        "regular": {
+          "calories": "640",
+          "fat": "20g",
+          "carbohydrate": "59g",
+          "protein": "60g",
+          "cholesterol": "165mg",
+          "sodium": "920mg"
+        }
+      }
+    },
+    {
+      "id": "218",
+      "name": "Mini hamburger steak, pepper sauce",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-03-11/218-12-mini-hamburger-steak-pepper-sauce",
+      "servings": {
+        "small": {
+          "calories": "530",
+          "fat": "32g",
+          "carbohydrate": "36g",
+          "protein": "31g",
+          "cholesterol": "120mg",
+          "sodium": "740mg"
+        },
+        "regular": {
+          "calories": "720",
+          "fat": "46g",
+          "carbohydrate": "38g",
+          "protein": "39g",
+          "cholesterol": "150mg",
+          "sodium": "950mg"
+        }
+      }
+    },
+    {
+      "id": "218",
+      "name": "Taco-style meat chili, lime and pepper sour cream",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-03-11/218-13-taco-style-meat-chili-lime-and-pepper-sour-cream",
+      "servings": {
+        "small": {
+          "calories": "460",
+          "fat": "24g",
+          "carbohydrate": "36g",
+          "protein": "24g",
+          "cholesterol": "75mg",
+          "sodium": "620mg"
+        },
+        "regular": {
+          "calories": "730",
+          "fat": "43g",
+          "carbohydrate": "41g",
+          "protein": "42g",
+          "cholesterol": "140mg",
+          "sodium": "860mg"
+        }
+      }
+    },
+    {
+      "id": "218",
+      "name": "General Tao grilled chicken breast",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-03-11/218-14-general-tao-grilled-chicken-breast",
+      "servings": {
+        "small": {
+          "calories": "400",
+          "fat": "6g",
+          "carbohydrate": "54g",
+          "protein": "30g",
+          "cholesterol": "85mg",
+          "sodium": "560mg"
+        },
+        "regular": {
+          "calories": "570",
+          "fat": "9g",
+          "carbohydrate": "63g",
+          "protein": "55g",
+          "cholesterol": "165mg",
+          "sodium": "740mg"
+        }
+      }
+    },
+    {
+      "id": "218",
+      "name": "Tuscan-style pasta",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-03-11/218-15-tuscan-style-pasta",
+      "servings": {
+        "small": {
+          "calories": "590",
+          "fat": "26g",
+          "carbohydrate": "74g",
+          "protein": "20g",
+          "cholesterol": "70mg",
+          "sodium": "720mg"
+        },
+        "regular": {
+          "calories": "770",
+          "fat": "32g",
+          "carbohydrate": "100g",
+          "protein": "25g",
+          "cholesterol": "85mg",
+          "sodium": "810mg"
+        }
+      }
+    }
+  ]
+}
