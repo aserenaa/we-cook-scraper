@@ -1,8 +1,7 @@
 import { createInterface } from 'readline'
-import { newScrapeMenu } from './scrapers/scrapeMenu.js'
-import { scrapeMenuLinksByDate } from './scrapers/scrapeUrls.js'
+import { newScrapeMenu, scrapeMenuLinksByDate } from './scrapers/index.js'
 import { saveToJsonFile } from './services/fileService.js'
-import { getMondaysOfMonth } from './utils/index.js'
+import { getMondaysOfMonth, isValidMonday } from './utils/index.js'
 
 const rl = createInterface({
   input: process.stdin,
@@ -29,8 +28,25 @@ const main = async () => {
 
     switch (choice.trim()) {
       case '1': {
+        const validDates = []
         const specificDates = await askQuestion('Enter Monday dates separated by space with the format YYYY-MM-DD (e.g. 2021-08-02 2021-08-09): ')
-        datesToScrape = specificDates.split(' ')
+
+        const inputDates = specificDates.split(' ')
+        for (const dateStr of inputDates) {
+          if (isValidMonday(dateStr)) {
+            validDates.push(dateStr)
+          } else {
+            console.error(`Invalid or not a Monday date: ${dateStr}`)
+          }
+        }
+
+        if (validDates.length === 0) {
+          console.error('No valid Monday dates were entered. Exiting.')
+          rl.close()
+          return
+        }
+
+        datesToScrape = validDates
         console.info('Running for specific dates:', datesToScrape)
         break
       }

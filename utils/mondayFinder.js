@@ -24,3 +24,19 @@ export const getMondaysOfMonth = (year, month) => {
 
   return mondays
 }
+
+/**
+ * Validates whether the input string is a date in YYYY-MM-DD format and falls on a Monday.
+ * @param {string} dateStr - The date string to validate.
+ * @returns {boolean} True if the date is valid and falls on a Monday, false otherwise.
+ */
+export const isValidMonday = (dateStr) => {
+  const dateRegex = /^\d{4}-\d{2}-\d{2}$/
+  if (!dateRegex.test(dateStr)) {
+    return false
+  }
+
+  const date = new Date(dateStr)
+  const dayOfWeek = date.getDay()
+  return dayOfWeek === 1
+}
