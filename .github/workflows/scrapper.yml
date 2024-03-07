@@ -19,7 +19,15 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
-
+          node-version: '18'
+      - name: Install dependencies
+        run: npm install
       - name: Run script with multiple date parameters
         run: node index.js ${{ github.event.inputs.dates }}
+      - name: Commit and push if changes
+        run: |
+          git config user.name "Abraham Serena"
+          git config user.email "abraham.serena@hotmail.com"
+          git add data/
+          git commit -m "[bot] Update weekMenuData.json" || exit 0  # Exit gracefully if there's nothing to commit
+          git push https://${{ secrets.PAT }}@github.com/aserenaa/we-cook-scraper.git main
