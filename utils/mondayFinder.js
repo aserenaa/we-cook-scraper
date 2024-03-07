@@ -36,7 +36,9 @@ export const isValidMonday = (dateStr) => {
     return false
   }
 
-  const date = new Date(dateStr)
+  const [year, month, day] = dateStr.split('-').map(num => parseInt(num, 10))
+  const date = new Date(year, month - 1, day)
+
   const dayOfWeek = date.getDay()
   return dayOfWeek === 1
 }
