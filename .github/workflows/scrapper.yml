@@ -1,0 +1,25 @@
+name: Run Script with Date Parameter
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Monday date to scrapt from WeCook (YYYY-MM-DD format)'
+        required: true
+        default: '2024-03-11'
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Run script with date parameter
+        run: node index.js ${{ github.event.inputs.date }}
