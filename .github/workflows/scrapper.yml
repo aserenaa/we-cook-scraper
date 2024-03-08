@@ -17,12 +17,9 @@ jobs:
       with:
         node-version: '14'
     
-    - name: Install dependencies
-      run: npm install
-    - name: Run script with multiple date parameters
-      run: node index.js ${{ github.event.inputs.dates }}
-    - name: Commit and push if changes
-      run: |
+    - run: npm install
+    - run: node index.js ${{ github.event.inputs.dates }}
+    - run: |
         git config --global user.email "abraham.serena@hotmail.com"
         git config --global user.name "Abraham Serena"
         git add data/
