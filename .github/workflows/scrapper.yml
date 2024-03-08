@@ -6,28 +6,25 @@ on:
       dates:
         description: 'Monday date separated by space to scrap from WeCook (YYYY-MM-DD format)'
         required: true
-        default: '2024-03-11'
 
 jobs:
-  run-script:
+  build:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      - name: Install dependencies
-        run: npm install
-      - name: Run script with multiple date parameters
-        run: node index.js ${{ github.event.inputs.dates }}
-      - name: Commit and push if changes
-        run: |
-          git config --global user.email "abraham.serena@hotmail.com"
-          git config --global user.name "Abraham Serena"
-          git add data/
-          git commit -m "[bot] Update weekMenuData.json" || exit 0  # Exit gracefully if there's nothing to commit
-          git push
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: '14'
+    
+    - name: Install dependencies
+      run: npm install
+    - name: Run script with multiple date parameters
+      run: node index.js ${{ github.event.inputs.dates }}
+    - name: Commit and push if changes
+      run: |
+        git config --global user.email "abraham.serena@hotmail.com"
+        git config --global user.name "Abraham Serena"
+        git add data/
+        git commit -m "[bot] Update weekMenuData.json" || exit 0  # Exit gracefully if there's nothing to commit
+        git push
