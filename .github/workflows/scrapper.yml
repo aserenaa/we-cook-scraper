@@ -24,4 +24,4 @@ jobs:
         git config --global user.name "Abraham Serena"
         git add data/
         git commit -m "[bot] Update weekMenuData.json" || exit 0  # Exit gracefully if there's nothing to commit
-        git push
+        git push https://${{ secrets.REPO_ACCESS_TOKEN }}@github.com/aserenaa/we-cook-scraper.git main
