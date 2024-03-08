@@ -25,7 +25,7 @@ export const newScrapeMenu = async (url) => {
 
     const { name, servings } = await page.evaluate(async () => {
       const nutrients = {}
-      const buttonSelectors = Array.from(document.querySelectorAll('div.facts-container div.swiper-slide button'))
+      const buttonSelectors = Array.from(document.querySelectorAll('div.page-menu-swiper div.swiper-wrapper div.swiper-slide button'))
       const menuName = document.querySelector('div.bg-beige h2.text-heading-sm')?.innerText.trim() || ''
 
       for (const button of buttonSelectors) {
