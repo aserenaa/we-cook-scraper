@@ -1,17 +1,23 @@
 /**
- * Script to automatically click on buttons corresponding to meals based on the repetitions defined.
- * Iterates through a list of meals, finds the associated button for each meal within the DOM,
- * and clicks the button the specified number of times. This script assumes that the target button
- * to click is always the second button within the meal's element and that each meal element is
- * contained within a div with a class of "meal".
+ * Automates clicks on meal-related buttons within a webpage. This script is designed to work with a specific
+ * HTML structure, where meals are represented as elements with a "meal" class. Each meal element is expected
+ * to contain buttons for interactions and a title with the meal's name. The script performs two main actions
+ * for each meal element found:
+ *
+ * 1. Cleas the default selections; It clicks the first button a number of times based on a value found in a child element with the class
+ *    "count .num". This typically represents a predefined number of servings or portions.
+ *
+ * 2. It then clicks the second button according to the number of repetitions specified for the meal in the
+ *    `menuRepetitions` object. This object maps meal names to the number of desired click interactions,
+ *    allowing for customizable repetitions for different meals.
  *
  * Usage:
- * - Define meal names and their click repetitions in the menuRepetitions object.
- * - Ensure the script is executed in an environment where the document object is available,
- *   such as within a browser.
+ * - Populate the `menuRepetitions` object with meal names as keys and the desired number of button click
+ *   repetitions as values.
+ * - Ensure this script is executed in an environment where the DOM is accessible, such as within a web browser.
  *
- * Note: Frequent or automated interactions with a website's UI elements may be against the
- * website's terms of service. Use responsibly and ensure compliance with website policies.
+ * Note: Frequent or automated interactions with web elements may violate some websites' terms of service. Use
+ * this script responsibly and ensure it complies with the policies of the website it interacts with.
  */
 
 const menuRepetitions = {
@@ -23,11 +29,12 @@ const menuRepetitions = {
   'Parmesan meatballs, marinara sauce': 2,
   'Southern-style beef chili': 2,
   'Grilled chicken breast, chipotle mayo': 2
+  // Add more meals and their click repetitions as needed.
 }
 
 /**
- * Simulates a click event on the specified DOM element.
- * @param {Element} element - The DOM element to simulate a click on.
+ * Simulates a click event on a specified DOM element.
+ * @param {Element} element The DOM element to simulate a click on.
  */
 function simulateClick (element) {
   element.dispatchEvent(new window.MouseEvent('click', {
@@ -38,10 +45,10 @@ function simulateClick (element) {
 }
 
 /**
- * Executes meal button clicking according to the specifications.
- * For each meal:
- * 1. Clicks the first button based on the number indicated in span.num for each meal.
- * 2. Then clicks the second button based on the repetitions defined in the menuRepetitions object.
+ * Iterates through elements with a class of "meal", simulating clicks on their buttons based on
+ * predefined logic. First, it clicks the first button according to a count specified within the element.
+ * Then, it clicks the second button a number of times as defined for the meal's name in the
+ * `menuRepetitions` object.
  */
 (function clickMealButtons () {
   const meals = document.querySelectorAll('.meal')
@@ -54,7 +61,7 @@ function simulateClick (element) {
     const numSpan = meal.querySelector('.count .num')
     const numRepetitionsFromSpan = numSpan ? parseInt(numSpan.textContent, 10) : 0
 
-    // Click the first button based on the number in span.num
+    // Click the first button according to the number specified in .count .num
     if (buttons.length > 0 && numRepetitionsFromSpan > 0) {
       const firstButton = buttons[0]
       for (let i = 0; i < numRepetitionsFromSpan; i++) {
@@ -62,10 +69,10 @@ function simulateClick (element) {
       }
     }
 
-    // Use the meal name to directly access the repetition count for the second button
+    // Click the second button according to the repetitions defined in `menuRepetitions`
     const repetitions = menuRepetitions[mealName]
     if (buttons.length >= 2 && repetitions) {
-      const secondButton = buttons[1] // The second button
+      const secondButton = buttons[1] // The second button is targeted for these clicks
       for (let i = 0; i < repetitions; i++) {
         simulateClick(secondButton)
       }
