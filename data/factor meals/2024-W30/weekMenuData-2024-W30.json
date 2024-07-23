@@ -1,0 +1,227 @@
+{
+  "date": "2024-W30",
+  "numberOfWeekMenus": 41,
+  "weekMenus": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "id": "6678f62942f81ea69f6788dc",
+      "name": "Bruschetta Chicken",
+      "url": "https://www.factormeals.ca/recipes/bruschetta-chicken-w30-6678f62942f81ea69f6788dc?week=2024-W30",
+      "periodDate": "2024-W30",
+      "servings": {
+        "regular": {
+          "calories": "570kcal",
+          "fat": "30g",
+          "saturated_fat": "4.5g",
+          "carbohydrate": "32g",
+          "sugar": "8g",
+          "dietary_fiber": "6g",
+          "protein": "46g",
+          "cholesterol": "130mg",
+          "sodium": "870mg"
+        }
+      }
+    },
+    {
+      "id": "6678f898718be5f7bc5593c8",
+      "name": "Pesto Salmon",
+      "url": "https://www.factormeals.ca/recipes/pesto-salmon-w30-6678f898718be5f7bc5593c8?week=2024-W30",
+      "periodDate": "2024-W30",
+      "servings": {
+        "regular": {
+          "calories": "690kcal",
+          "fat": "53g",
+          "saturated_fat": "16g",
+          "carbohydrate": "16g",
+          "sugar": "6g",
+          "dietary_fiber": "7g",
+          "protein": "37g",
+          "cholesterol": "125mg",
+          "sodium": "790mg"
+        }
+      }
+    },
+    {
+      "id": "6678f768718be5f7bc5593c2",
+      "name": "Almond Crusted Salmon",
+      "url": "https://www.factormeals.ca/recipes/almond-crusted-salmon-w30-6678f768718be5f7bc5593c2?week=2024-W30",
+      "periodDate": "2024-W30",
+      "servings": {
+        "regular": {
+          "calories": "660kcal",
+          "fat": "49g",
+          "saturated_fat": "15g",
+          "carbohydrate": "15g",
+          "sugar": "5g",
+          "dietary_fiber": "5g",
+          "protein": "37g",
+          "cholesterol": "140mg",
+          "sodium": "680mg"
+        }
+      }
+    },
+    null,
+    null,
+    {
+      "id": "6643735d38584bf020f8c7e8",
+      "name": "Cocoa Truffle Bars - Coconut Fudge",
+      "url": "https://www.factormeals.ca/recipes/cocoa-truffle-bars-coconut-fudge-6643735d38584bf020f8c7e8?week=2024-W30",
+      "periodDate": "2024-W30",
+      "servings": {
+        "regular": {
+          "calories": "140kcal",
+          "fat": "12g",
+          "saturated_fat": "10g",
+          "carbohydrate": "12g",
+          "sugar": "9g",
+          "dietary_fiber": "2g",
+          "protein": "1g",
+          "cholesterol": "0mg",
+          "sodium": "65mg"
+        }
+      }
+    },
+    null,
+    {
+      "id": "62fa998258391c02f1078120",
+      "name": "Pineapple Turmeric Basil Cold-Pressed Juice",
+      "url": "https://www.factormeals.ca/recipes/pineapple-turmeric-juice-62fa998258391c02f1078120?week=2024-W30",
+      "periodDate": "2024-W30",
+      "servings": {
+        "regular": {
+          "calories": "90kcal",
+          "fat": "0g",
+          "saturated_fat": "0g",
+          "carbohydrate": "22g",
+          "sugar": "20g",
+          "dietary_fiber": "0g",
+          "protein": "1g",
+          "cholesterol": "0mg",
+          "sodium": "80mg"
+        }
+      }
+    },
+    {
+      "id": "62f9b6d676780e71000573a8",
+      "name": "Apple Beet Ginger Cold-Pressed Juice",
+      "url": "https://www.factormeals.ca/recipes/apple-beet-ginger-juice-62f9b6d676780e71000573a8?week=2024-W30",
+      "periodDate": "2024-W30",
+      "servings": {
+        "regular": {
+          "calories": "100kcal",
+          "fat": "0g",
+          "saturated_fat": "0g",
+          "carbohydrate": "27g",
+          "sugar": "22g",
+          "dietary_fiber": "2g",
+          "protein": "1g",
+          "cholesterol": "0mg",
+          "sodium": "65mg"
+        }
+      }
+    },
+    {
+      "id": "62fa97867802b21af40a971f",
+      "name": "Apple Kale Wheatgrass Cold-Pressed Juice",
+      "url": "https://www.factormeals.ca/recipes/apple-kale-wheatgrass-juice-62fa97867802b21af40a971f?week=2024-W30",
+      "periodDate": "2024-W30",
+      "servings": {
+        "regular": {
+          "calories": "110kcal",
+          "fat": "0g",
+          "saturated_fat": "0g",
+          "carbohydrate": "28g",
+          "sugar": "23g",
+          "dietary_fiber": "0g",
+          "protein": "1g",
+          "cholesterol": "0mg",
+          "sodium": "15mg"
+        }
+      }
+    },
+    null,
+    {
+      "id": "64c1190f0d43f69f688944e3",
+      "name": "Wellness Shot Variety Pack",
+      "url": "https://www.factormeals.ca/recipes/wellness-shot-variety-pack-64c1190f0d43f69f688944e3?week=2024-W30",
+      "periodDate": "2024-W30",
+      "servings": {
+        "regular": {
+          "calories": "15kcal",
+          "fat": "0g",
+          "saturated_fat": "0g",
+          "carbohydrate": "4g",
+          "sugar": "3g",
+          "dietary_fiber": "0g",
+          "protein": "0g",
+          "cholesterol": "0mg",
+          "sodium": "0mg"
+        }
+      }
+    },
+    null,
+    {
+      "id": "6582fdc6cfcfc96b5402553e",
+      "name": "Peanut Butter Bites – Chocolate",
+      "url": "https://www.factormeals.ca/recipes/peanut-butter-bites-chocolate-6582fdc6cfcfc96b5402553e?week=2024-W30",
+      "periodDate": "2024-W30",
+      "servings": {
+        "regular": {
+          "calories": "150kcal",
+          "fat": "5g",
+          "saturated_fat": "1g",
+          "carbohydrate": "22g",
+          "sugar": "15g",
+          "dietary_fiber": "4g",
+          "protein": "5g",
+          "cholesterol": "0mg",
+          "sodium": "75mg"
+        }
+      }
+    },
+    {
+      "id": "660c29bcd49faf3ad10a482d",
+      "name": "Peanut Butter Bites – Oatmeal Raisin",
+      "url": "https://www.factormeals.ca/recipes/peanut-butter-bites-oatmeal-raisin-660c29bcd49faf3ad10a482d?week=2024-W30",
+      "periodDate": "2024-W30",
+      "servings": {
+        "regular": {
+          "calories": "150kcal",
+          "fat": "5g",
+          "saturated_fat": "0g",
+          "carbohydrate": "23g",
+          "sugar": "15g",
+          "dietary_fiber": "4g",
+          "protein": "4g",
+          "cholesterol": "0mg",
+          "sodium": "70mg"
+        }
+      }
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { initializeAndNavigate } from '../utils/index.js'
+import { initializeAndNavigate } from '../../utils/index.js'
 
 /**
  * Scrapes menu data from a given URL.

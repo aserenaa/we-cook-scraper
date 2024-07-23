@@ -30,6 +30,7 @@
   "homepage": "https://github.com/aserenaa/we-cook-scraper#readme",
   "dependencies": {
     "axios": "^1.6.7",
+    "ora": "^8.0.1",
     "puppeteer": "^22.0.0"
   },
   "devDependencies": {

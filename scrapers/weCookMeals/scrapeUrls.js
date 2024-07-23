@@ -1,5 +1,5 @@
-import { weekMenuUrl } from '../config.js'
-import { initializeAndNavigate } from '../utils/index.js'
+import { weekMenuUrl } from '../../config.js'
+import { initializeAndNavigate } from '../../utils/index.js'
 
 /**
  * Scrapes menu links from a specific date's page on the week menu website.
