@@ -2,41 +2,671 @@
   "date": "2024-W27",
   "numberOfWeekMenus": 36,
   "weekMenus": [
+    {
+      "id": "665c4835bb68d6ba93ee1340",
+      "name": "Creamy Lemon Pepper Chicken",
+      "url": "https://www.factormeals.ca/recipes/creamy-lemon-pepper-chicken-w27-665c4835bb68d6ba93ee1340?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "580kcal",
+          "fat": "30g",
+          "saturated_fat": "13g",
+          "carbohydrate": "29g",
+          "sugar": "7g",
+          "dietary_fiber": "5g",
+          "protein": "45g",
+          "cholesterol": "160mg",
+          "sodium": "830mg"
+        }
+      }
+    },
+    {
+      "id": "665ad77007c68e1e8bb69543",
+      "name": "Classic Beef Bolognese",
+      "url": "https://www.factormeals.ca/recipes/classic-beef-bolognese-w27-665ad77007c68e1e8bb69543?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "430kcal",
+          "fat": "23g",
+          "saturated_fat": "8g",
+          "carbohydrate": "34g",
+          "sugar": "11g",
+          "dietary_fiber": "6g",
+          "protein": "21g",
+          "cholesterol": "90mg",
+          "sodium": "830mg"
+        }
+      }
+    },
+    {
+      "id": "665a9d8307c68e1e8bb694b6",
+      "name": "Broccoli Cheddar Ground Beef",
+      "url": "https://www.factormeals.ca/recipes/broccoli-cheddar-ground-beef-w27-665a9d8307c68e1e8bb694b6?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "480kcal",
+          "fat": "34g",
+          "saturated_fat": "16g",
+          "carbohydrate": "16g",
+          "sugar": "7g",
+          "dietary_fiber": "5g",
+          "protein": "29g",
+          "cholesterol": "110mg",
+          "sodium": "810mg"
+        }
+      }
+    },
+    {
+      "id": "665acfafbb68d6ba93ee1221",
+      "name": "Creamy Dijon Pork Tenderloin",
+      "url": "https://www.factormeals.ca/recipes/creamy-dijon-pork-tenderloin-w27-665acfafbb68d6ba93ee1221?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "640kcal",
+          "fat": "44g",
+          "saturated_fat": "19g",
+          "carbohydrate": "13g",
+          "sugar": "3g",
+          "dietary_fiber": "5g",
+          "protein": "47g",
+          "cholesterol": "190mg",
+          "sodium": "850mg"
+        }
+      }
+    },
+    {
+      "id": "665ad54407c68e1e8bb69533",
+      "name": "Herb-Grilled Chicken",
+      "url": "https://www.factormeals.ca/recipes/herb-grilled-chicken-w27-665ad54407c68e1e8bb69533?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "540kcal",
+          "fat": "17g",
+          "saturated_fat": "5g",
+          "carbohydrate": "50g",
+          "sugar": "5g",
+          "dietary_fiber": "5g",
+          "protein": "45g",
+          "cholesterol": "115mg",
+          "sodium": "840mg"
+        }
+      }
+    },
+    {
+      "id": "665c4bb907c68e1e8bb69641",
+      "name": "Chicken Pesto Cavatappi",
+      "url": "https://www.factormeals.ca/recipes/chicken-pesto-cavatappi-w27-665c4bb907c68e1e8bb69641?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "630kcal",
+          "fat": "33g",
+          "saturated_fat": "9g",
+          "carbohydrate": "44g",
+          "sugar": "16g",
+          "dietary_fiber": "7g",
+          "protein": "43g",
+          "cholesterol": "140mg",
+          "sodium": "840mg"
+        }
+      }
+    },
+    {
+      "id": "665a9ad907c68e1e8bb694ad",
+      "name": "Artichoke & Spinach Grilled Chicken",
+      "url": "https://www.factormeals.ca/recipes/artichoke-spinach-grilled-chicken-w27-665a9ad907c68e1e8bb694ad?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "610kcal",
+          "fat": "42g",
+          "saturated_fat": "16g",
+          "carbohydrate": "11g",
+          "sugar": "7g",
+          "dietary_fiber": "3g",
+          "protein": "44g",
+          "cholesterol": "170mg",
+          "sodium": "830mg"
+        }
+      }
+    },
+    {
+      "id": "665c49f507c68e1e8bb6963c",
+      "name": "Red Chile Ground Beef Tamale Bowl",
+      "url": "https://www.factormeals.ca/recipes/red-chile-ground-beef-tamale-bowl-w27-665c49f507c68e1e8bb6963c?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "570kcal",
+          "fat": "29g",
+          "saturated_fat": "9g",
+          "carbohydrate": "49g",
+          "sugar": "8g",
+          "dietary_fiber": "8g",
+          "protein": "33g",
+          "cholesterol": "90mg",
+          "sodium": "870mg"
+        }
+      }
+    },
+    {
+      "id": "665c508007c68e1e8bb6964f",
+      "name": "Mushroom-Topped Chicken Thighs",
+      "url": "https://www.factormeals.ca/recipes/mushroom-topped-chicken-thighs-w27-665c508007c68e1e8bb6964f?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "560kcal",
+          "fat": "30g",
+          "saturated_fat": "10g",
+          "carbohydrate": "37g",
+          "sugar": "7g",
+          "dietary_fiber": "5g",
+          "protein": "34g",
+          "cholesterol": "165mg",
+          "sodium": "800mg"
+        }
+      }
+    },
+    {
+      "id": "665ad977bb68d6ba93ee124d",
+      "name": "Parmesan & Sun-Dried Tomato Chicken Cavatappi",
+      "url": "https://www.factormeals.ca/recipes/parmesan-sun-dried-tomato-chicken-cavatappi-w27-665ad977bb68d6ba93ee124d?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "510kcal",
+          "fat": "23g",
+          "saturated_fat": "9g",
+          "carbohydrate": "39g",
+          "sugar": "10g",
+          "dietary_fiber": "7g",
+          "protein": "37g",
+          "cholesterol": "155mg",
+          "sodium": "740mg"
+        }
+      }
+    },
+    {
+      "id": "665c561f07c68e1e8bb69657",
+      "name": "Roasted Salmon & Lemon Dill Yogurt",
+      "url": "https://www.factormeals.ca/recipes/roasted-salmon-lemon-dill-yogurt-w27-665c561f07c68e1e8bb69657?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "540kcal",
+          "fat": "30g",
+          "saturated_fat": "6g",
+          "carbohydrate": "35g",
+          "sugar": "6g",
+          "dietary_fiber": "5g",
+          "protein": "34g",
+          "cholesterol": "85mg",
+          "sodium": "570mg"
+        }
+      }
+    },
+    {
+      "id": "665a9f3dbb68d6ba93ee11b7",
+      "name": "Garlic & Herb Chicken Breast",
+      "url": "https://www.factormeals.ca/recipes/garlic-herb-chicken-breast-w27-665a9f3dbb68d6ba93ee11b7?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "630kcal",
+          "fat": "44g",
+          "saturated_fat": "19g",
+          "carbohydrate": "13g",
+          "sugar": "3g",
+          "dietary_fiber": "5g",
+          "protein": "47g",
+          "cholesterol": "180mg",
+          "sodium": "640mg"
+        }
+      }
+    },
+    {
+      "id": "665c586c07c68e1e8bb69661",
+      "name": "Baja Tofu, Black Beans & Rice",
+      "url": "https://www.factormeals.ca/recipes/baja-tofu-black-beans-rice-w27-665c586c07c68e1e8bb69661?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "430kcal",
+          "fat": "23g",
+          "saturated_fat": "2.5g",
+          "carbohydrate": "45g",
+          "sugar": "7g",
+          "dietary_fiber": "8g",
+          "protein": "18g",
+          "cholesterol": "0mg",
+          "sodium": "880mg"
+        }
+      }
+    },
+    {
+      "id": "665addd1bb68d6ba93ee1259",
+      "name": "Harissa Chicken",
+      "url": "https://www.factormeals.ca/recipes/harissa-chicken-w27-665addd1bb68d6ba93ee1259?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "460kcal",
+          "fat": "19g",
+          "saturated_fat": "6g",
+          "carbohydrate": "31g",
+          "sugar": "7g",
+          "dietary_fiber": "6g",
+          "protein": "43g",
+          "cholesterol": "120mg",
+          "sodium": "770mg"
+        }
+      }
+    },
+    {
+      "id": "665c572807c68e1e8bb6965b",
+      "name": "Blackened Salmon",
+      "url": "https://www.factormeals.ca/recipes/blackened-salmon-w27-665c572807c68e1e8bb6965b?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "600kcal",
+          "fat": "44g",
+          "saturated_fat": "17g",
+          "carbohydrate": "15g",
+          "sugar": "4g",
+          "dietary_fiber": "5g",
+          "protein": "37g",
+          "cholesterol": "145mg",
+          "sodium": "790mg"
+        }
+      }
+    },
+    {
+      "id": "665aa1f6bb68d6ba93ee11bc",
+      "name": "Chorizo Chili",
+      "url": "https://www.factormeals.ca/recipes/chorizo-chili-w27-665aa1f6bb68d6ba93ee11bc?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "610kcal",
+          "fat": "41g",
+          "saturated_fat": "17g",
+          "carbohydrate": "16g",
+          "sugar": "5g",
+          "dietary_fiber": "4g",
+          "protein": "48g",
+          "cholesterol": "165mg",
+          "sodium": "830mg"
+        }
+      }
+    },
+    {
+      "id": "665aa38707c68e1e8bb694c3",
+      "name": "Spicy Turkey Poblano Bowl",
+      "url": "https://www.factormeals.ca/recipes/spicy-turkey-poblano-bowl-w27-665aa38707c68e1e8bb694c3?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "510kcal",
+          "fat": "36g",
+          "saturated_fat": "18g",
+          "carbohydrate": "16g",
+          "sugar": "7g",
+          "dietary_fiber": "5g",
+          "protein": "34g",
+          "cholesterol": "185mg",
+          "sodium": "840mg"
+        }
+      }
+    },
+    {
+      "id": "665adadf07c68e1e8bb6954e",
+      "name": "BBQ Pork Sloppy Joe",
+      "url": "https://www.factormeals.ca/recipes/bbq-pork-sloppy-joe-w27-665adadf07c68e1e8bb6954e?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "460kcal",
+          "fat": "20g",
+          "saturated_fat": "8g",
+          "carbohydrate": "48g",
+          "sugar": "17g",
+          "dietary_fiber": "9g",
+          "protein": "28g",
+          "cholesterol": "80mg",
+          "sodium": "860mg"
+        }
+      }
+    },
+    {
+      "id": "665c4f2007c68e1e8bb6964a",
+      "name": "Chile-Spiced Pork Chop",
+      "url": "https://www.factormeals.ca/recipes/chile-spiced-pork-chop-w27-665c4f2007c68e1e8bb6964a?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "640kcal",
+          "fat": "32g",
+          "saturated_fat": "7g",
+          "carbohydrate": "47g",
+          "sugar": "9g",
+          "dietary_fiber": "8g",
+          "protein": "44g",
+          "cholesterol": "115mg",
+          "sodium": "770mg"
+        }
+      }
+    },
+    {
+      "id": "665c4de307c68e1e8bb69644",
+      "name": "Mozzarella Burger & Roasted Potatoes",
+      "url": "https://www.factormeals.ca/recipes/mozzarella-burger-roasted-potatoes-w27-665c4de307c68e1e8bb69644?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "620kcal",
+          "fat": "33g",
+          "saturated_fat": "11g",
+          "carbohydrate": "41g",
+          "sugar": "12g",
+          "dietary_fiber": "4g",
+          "protein": "42g",
+          "cholesterol": "120mg",
+          "sodium": "870mg"
+        }
+      }
+    },
+    {
+      "id": "665c59ad07c68e1e8bb69669",
+      "name": "Indian-Style Butter Tofu",
+      "url": "https://www.factormeals.ca/recipes/indian-style-butter-tofu-w27-665c59ad07c68e1e8bb69669?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "430kcal",
+          "fat": "26g",
+          "saturated_fat": "10g",
+          "carbohydrate": "39g",
+          "sugar": "12g",
+          "dietary_fiber": "9g",
+          "protein": "17g",
+          "cholesterol": "50mg",
+          "sodium": "870mg"
+        }
+      }
+    },
+    {
+      "id": "665adc2207c68e1e8bb69553",
+      "name": "Turkey Chili Mac",
+      "url": "https://www.factormeals.ca/recipes/turkey-chili-mac-w27-665adc2207c68e1e8bb69553?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "460kcal",
+          "fat": "18g",
+          "saturated_fat": "6g",
+          "carbohydrate": "48g",
+          "sugar": "6g",
+          "dietary_fiber": "6g",
+          "protein": "31g",
+          "cholesterol": "145mg",
+          "sodium": "840mg"
+        }
+      }
+    },
+    {
+      "id": "665c5c7dbb68d6ba93ee135c",
+      "name": "Three Bean Vegan Chili",
+      "url": "https://www.factormeals.ca/recipes/three-bean-vegan-chili-w27-665c5c7dbb68d6ba93ee135c?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "480kcal",
+          "fat": "17g",
+          "saturated_fat": "2g",
+          "carbohydrate": "70g",
+          "sugar": "9g",
+          "dietary_fiber": "14g",
+          "protein": "20g",
+          "cholesterol": "0mg",
+          "sodium": "750mg"
+        }
+      }
+    },
+    {
+      "id": "665ad2fcbb68d6ba93ee122e",
+      "name": "Maple-Glazed Pork Chop",
+      "url": "https://www.factormeals.ca/recipes/maple-glazed-pork-chop-w27-665ad2fcbb68d6ba93ee122e?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "620kcal",
+          "fat": "21g",
+          "saturated_fat": "4.5g",
+          "carbohydrate": "63g",
+          "sugar": "20g",
+          "dietary_fiber": "7g",
+          "protein": "43g",
+          "cholesterol": "90mg",
+          "sodium": "880mg"
+        }
+      }
+    },
+    {
+      "id": "665c4771bb68d6ba93ee133d",
+      "name": "Ancho Chile-Glazed Pork Chop",
+      "url": "https://www.factormeals.ca/recipes/ancho-chile-glazed-pork-chop-w27-665c4771bb68d6ba93ee133d?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "420kcal",
+          "fat": "15g",
+          "saturated_fat": "3.5g",
+          "carbohydrate": "31g",
+          "sugar": "9g",
+          "dietary_fiber": "5g",
+          "protein": "42g",
+          "cholesterol": "90mg",
+          "sodium": "500mg"
+        }
+      }
+    },
+    {
+      "id": "665c552907c68e1e8bb69653",
+      "name": "Garlic-Mustard Aioli Turkey Bowl",
+      "url": "https://www.factormeals.ca/recipes/garlic-mustard-aioli-turkey-bowl-w27-665c552907c68e1e8bb69653?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "560kcal",
+          "fat": "31g",
+          "saturated_fat": "6g",
+          "carbohydrate": "35g",
+          "sugar": "11g",
+          "dietary_fiber": "7g",
+          "protein": "39g",
+          "cholesterol": "155mg",
+          "sodium": "750mg"
+        }
+      }
+    },
+    {
+      "id": "66436ec238584bf020f8c7b3",
+      "name": "Cocoa Truffle Bars - Chocolate Mint",
+      "url": "https://www.factormeals.ca/recipes/cocoa-truffle-bars-chocolate-mint-66436ec238584bf020f8c7b3?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "140kcal",
+          "fat": "12g",
+          "saturated_fat": "10g",
+          "carbohydrate": "12g",
+          "sugar": "9g",
+          "dietary_fiber": "2g",
+          "protein": "1g",
+          "cholesterol": "0mg",
+          "sodium": "65mg"
+        }
+      }
+    },
+    {
+      "id": "6643735d38584bf020f8c7e8",
+      "name": "Cocoa Truffle Bars - Coconut Fudge",
+      "url": "https://www.factormeals.ca/recipes/cocoa-truffle-bars-coconut-fudge-6643735d38584bf020f8c7e8?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "140kcal",
+          "fat": "12g",
+          "saturated_fat": "10g",
+          "carbohydrate": "12g",
+          "sugar": "9g",
+          "dietary_fiber": "2g",
+          "protein": "1g",
+          "cholesterol": "0mg",
+          "sodium": "65mg"
+        }
+      }
+    },
     null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+      "id": "62fa998258391c02f1078120",
+      "name": "Pineapple Turmeric Basil Cold-Pressed Juice",
+      "url": "https://www.factormeals.ca/recipes/pineapple-turmeric-juice-62fa998258391c02f1078120?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "90kcal",
+          "fat": "0g",
+          "saturated_fat": "0g",
+          "carbohydrate": "22g",
+          "sugar": "20g",
+          "dietary_fiber": "0g",
+          "protein": "1g",
+          "cholesterol": "0mg",
+          "sodium": "80mg"
+        }
+      }
+    },
+    {
+      "id": "62f9b6d676780e71000573a8",
+      "name": "Apple Beet Ginger Cold-Pressed Juice",
+      "url": "https://www.factormeals.ca/recipes/apple-beet-ginger-juice-62f9b6d676780e71000573a8?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "100kcal",
+          "fat": "0g",
+          "saturated_fat": "0g",
+          "carbohydrate": "27g",
+          "sugar": "22g",
+          "dietary_fiber": "2g",
+          "protein": "1g",
+          "cholesterol": "0mg",
+          "sodium": "65mg"
+        }
+      }
+    },
+    {
+      "id": "62fa97867802b21af40a971f",
+      "name": "Apple Kale Wheatgrass Cold-Pressed Juice",
+      "url": "https://www.factormeals.ca/recipes/apple-kale-wheatgrass-juice-62fa97867802b21af40a971f?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "110kcal",
+          "fat": "0g",
+          "saturated_fat": "0g",
+          "carbohydrate": "28g",
+          "sugar": "23g",
+          "dietary_fiber": "0g",
+          "protein": "1g",
+          "cholesterol": "0mg",
+          "sodium": "15mg"
+        }
+      }
+    },
+    {
+      "id": "62fa989943085b4d3a00a616",
+      "name": "Carrot Orange Ginger Cold-Pressed Juice",
+      "url": "https://www.factormeals.ca/recipes/carrot-orange-ginger-juice-62fa989943085b4d3a00a616?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "90kcal",
+          "fat": "0g",
+          "saturated_fat": "0g",
+          "carbohydrate": "21g",
+          "sugar": "15g",
+          "dietary_fiber": "0g",
+          "protein": "1g",
+          "cholesterol": "0mg",
+          "sodium": "115mg"
+        }
+      }
+    },
+    {
+      "id": "64c1190f0d43f69f688944e3",
+      "name": "Wellness Shot Variety Pack",
+      "url": "https://www.factormeals.ca/recipes/wellness-shot-variety-pack-64c1190f0d43f69f688944e3?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "15kcal",
+          "fat": "0g",
+          "saturated_fat": "0g",
+          "carbohydrate": "4g",
+          "sugar": "3g",
+          "dietary_fiber": "0g",
+          "protein": "0g",
+          "cholesterol": "0mg",
+          "sodium": "0mg"
+        }
+      }
+    },
+    {
+      "id": "6582fdc6cfcfc96b5402553e",
+      "name": "Peanut Butter Bites – Chocolate",
+      "url": "https://www.factormeals.ca/recipes/peanut-butter-bites-chocolate-6582fdc6cfcfc96b5402553e?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "150kcal",
+          "fat": "5g",
+          "saturated_fat": "1g",
+          "carbohydrate": "22g",
+          "sugar": "15g",
+          "dietary_fiber": "4g",
+          "protein": "5g",
+          "cholesterol": "0mg",
+          "sodium": "75mg"
+        }
+      }
+    },
+    {
+      "id": "660c29bcd49faf3ad10a482d",
+      "name": "Peanut Butter Bites – Oatmeal Raisin",
+      "url": "https://www.factormeals.ca/recipes/peanut-butter-bites-oatmeal-raisin-660c29bcd49faf3ad10a482d?week=2024-W27",
+      "periodDate": "2024-W27",
+      "servings": {
+        "regular": {
+          "calories": "150kcal",
+          "fat": "5g",
+          "saturated_fat": "0g",
+          "carbohydrate": "23g",
+          "sugar": "15g",
+          "dietary_fiber": "4g",
+          "protein": "4g",
+          "cholesterol": "0mg",
+          "sodium": "70mg"
+        }
+      }
+    }
   ]
 }

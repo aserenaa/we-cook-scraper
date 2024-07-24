@@ -1,0 +1,399 @@
+{
+  "date": "2024-07-07",
+  "numberOfWeekMenus": 15,
+  "weekMenus": [
+    {
+      "id": "1",
+      "name": "Grilled Buffalo-style chicken bowl",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-07-07/1-grilled-buffalo-style-chicken-bowl",
+      "servings": {
+        "small": {
+          "calories": "410",
+          "fat": "22g",
+          "carbohydrate": "31g",
+          "protein": "24g",
+          "cholesterol": "110mg",
+          "sodium": "620mg"
+        },
+        "regular": {
+          "calories": "470",
+          "fat": "27g",
+          "carbohydrate": "28g",
+          "protein": "30g",
+          "cholesterol": "145mg",
+          "sodium": "750mg"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "Tofu poke bowl",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-07-07/2-tofu-poke-bowl",
+      "servings": {
+        "small": {
+          "calories": "500",
+          "fat": "31g",
+          "carbohydrate": "43g",
+          "protein": "17g",
+          "cholesterol": "10mg",
+          "sodium": "350mg"
+        },
+        "regular": {
+          "calories": "530",
+          "fat": "31g",
+          "carbohydrate": "39g",
+          "protein": "25g",
+          "cholesterol": "5mg",
+          "sodium": "370mg"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Asian-style pulled pork",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-07-07/3-asian-style-pulled-pork",
+      "servings": {
+        "small": {
+          "calories": "360",
+          "fat": "11g",
+          "carbohydrate": "49g",
+          "protein": "15g",
+          "cholesterol": "40mg",
+          "sodium": "480mg"
+        },
+        "regular": {
+          "calories": "410",
+          "fat": "15g",
+          "carbohydrate": "46g",
+          "protein": "19g",
+          "cholesterol": "55mg",
+          "sodium": "540mg"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "Cacciatore-style chicken with mushroom risotto",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-07-07/4-cacciatore-style-chicken-with-mushroom-risotto",
+      "servings": {
+        "small": {
+          "calories": "430",
+          "fat": "22g",
+          "carbohydrate": "31g",
+          "protein": "26g",
+          "cholesterol": "90mg",
+          "sodium": "780mg"
+        },
+        "regular": {
+          "calories": "450",
+          "fat": "22g",
+          "carbohydrate": "25g",
+          "protein": "33g",
+          "cholesterol": "110mg",
+          "sodium": "680mg"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "California Roll salmon bowl",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-07-07/5-california-roll-salmon-bowl",
+      "servings": {
+        "small": {
+          "calories": "530",
+          "fat": "26g",
+          "carbohydrate": "48g",
+          "protein": "28g",
+          "cholesterol": "65mg",
+          "sodium": "560mg"
+        },
+        "regular": {
+          "calories": "620",
+          "fat": "36g",
+          "carbohydrate": "40g",
+          "protein": "35g",
+          "cholesterol": "80mg",
+          "sodium": "670mg"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Grilled beef steak, chimichurri sauce",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-07-07/6-grilled-beef-steak-chimichurri-sauce",
+      "servings": {
+        "small": {
+          "calories": "480",
+          "fat": "31g",
+          "carbohydrate": "31g",
+          "protein": "23g",
+          "cholesterol": "55mg",
+          "sodium": "460mg"
+        },
+        "regular": {
+          "calories": "530",
+          "fat": "33g",
+          "carbohydrate": "26g",
+          "protein": "32g",
+          "cholesterol": "85mg",
+          "sodium": "480mg"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "Tuscan-style pasta",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-07-07/7-tuscan-style-pasta",
+      "servings": {
+        "small": {
+          "calories": "540",
+          "fat": "23g",
+          "carbohydrate": "68g",
+          "protein": "18g",
+          "cholesterol": "60mg",
+          "sodium": "650mg"
+        },
+        "regular": {
+          "calories": "520",
+          "fat": "21g",
+          "carbohydrate": "69g",
+          "protein": "17g",
+          "cholesterol": "55mg",
+          "sodium": "550mg"
+        },
+        "family": {
+          "calories": "520",
+          "fat": "21g",
+          "carbohydrate": "69g",
+          "protein": "17g",
+          "cholesterol": "55mg",
+          "sodium": "560mg"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "Whole grain pasta salad with grilled chicken, fresh vegetables and Catalina dressing",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-07-07/8-whole-grain-pasta-salad-with-grilled-chicken-fresh-vegetables-and-catalina-dressing",
+      "servings": {
+        "small": {
+          "calories": "200",
+          "fat": "9g",
+          "carbohydrate": "18g",
+          "protein": "13g",
+          "cholesterol": "30mg",
+          "sodium": "160mg"
+        },
+        "regular": {
+          "calories": "220",
+          "fat": "10g",
+          "carbohydrate": "17g",
+          "protein": "15g",
+          "cholesterol": "35mg",
+          "sodium": "180mg"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "Vegetarian “spring roll” salad with spicy peanut dressing",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-07-07/8-vegetarian-spring-roll-salad-with-spicy-peanut-dressing",
+      "servings": {
+        "small": {
+          "calories": "170",
+          "fat": "7g",
+          "carbohydrate": "22g",
+          "protein": "6g",
+          "cholesterol": "0mg",
+          "sodium": "140mg"
+        },
+        "regular": {
+          "calories": "160",
+          "fat": "7g",
+          "carbohydrate": "20g",
+          "protein": "5g",
+          "cholesterol": "0mg",
+          "sodium": "150mg"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "Tikka masala roasted chicken",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-07-07/10-tikka-masala-roasted-chicken",
+      "servings": {
+        "small": {
+          "calories": "380",
+          "fat": "15g",
+          "carbohydrate": "39g",
+          "protein": "26g",
+          "cholesterol": "95mg",
+          "sodium": "520mg"
+        },
+        "regular": {
+          "calories": "410",
+          "fat": "18g",
+          "carbohydrate": "33g",
+          "protein": "33g",
+          "cholesterol": "120mg",
+          "sodium": "640mg"
+        },
+        "family": {
+          "calories": "370",
+          "fat": "11g",
+          "carbohydrate": "41g",
+          "protein": "27g",
+          "cholesterol": "85mg",
+          "sodium": "420mg"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "Grilled glazed pork, sweet teriyaki sauce",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-07-07/11-grilled-glazed-pork-sweet-teriyaki-sauce-2",
+      "servings": {
+        "small": {
+          "calories": "350",
+          "fat": "5g",
+          "carbohydrate": "48g",
+          "protein": "25g",
+          "cholesterol": "55mg",
+          "sodium": "610mg"
+        },
+        "regular": {
+          "calories": "370",
+          "fat": "6g",
+          "carbohydrate": "41g",
+          "protein": "33g",
+          "cholesterol": "80mg",
+          "sodium": "650mg"
+        },
+        "family": {
+          "calories": "340",
+          "fat": "6g",
+          "carbohydrate": "44g",
+          "protein": "27g",
+          "cholesterol": "65mg",
+          "sodium": "470mg"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "Swiss cheese meatballs, creamy mustard sauce",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-07-07/12-swiss-cheese-meatballs-creamy-mustard-sauce",
+      "servings": {
+        "small": {
+          "calories": "410",
+          "fat": "26g",
+          "carbohydrate": "32g",
+          "protein": "23g",
+          "cholesterol": "95mg",
+          "sodium": "710mg"
+        },
+        "regular": {
+          "calories": "490",
+          "fat": "30g",
+          "carbohydrate": "28g",
+          "protein": "28g",
+          "cholesterol": "120mg",
+          "sodium": "680mg"
+        },
+        "family": {
+          "calories": "440",
+          "fat": "25g",
+          "carbohydrate": "32g",
+          "protein": "24g",
+          "cholesterol": "95mg",
+          "sodium": "700mg"
+        }
+      }
+    },
+    {
+      "id": "13",
+      "name": "“Sloppy Joe” beef chili",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-07-07/13-sloppy-joe-beef-chili",
+      "servings": {
+        "small": {
+          "calories": "310",
+          "fat": "10g",
+          "carbohydrate": "38g",
+          "protein": "14g",
+          "cholesterol": "30mg",
+          "sodium": "490mg"
+        },
+        "regular": {
+          "calories": "360",
+          "fat": "15g",
+          "carbohydrate": "36g",
+          "protein": "20g",
+          "cholesterol": "50mg",
+          "sodium": "710mg"
+        }
+      }
+    },
+    {
+      "id": "14",
+      "name": "Sweet chili grilled chicken breast, hoisin mayo",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-07-07/14-sweet-chili-grilled-chicken-breast-hoisin-mayo-1",
+      "servings": {
+        "small": {
+          "calories": "430",
+          "fat": "17g",
+          "carbohydrate": "41g",
+          "protein": "23g",
+          "cholesterol": "70mg",
+          "sodium": "490mg"
+        },
+        "regular": {
+          "calories": "430",
+          "fat": "15g",
+          "carbohydrate": "37g",
+          "protein": "31g",
+          "cholesterol": "95mg",
+          "sodium": "520mg"
+        },
+        "family": {
+          "calories": "370",
+          "fat": "11g",
+          "carbohydrate": "40g",
+          "protein": "24g",
+          "cholesterol": "70mg",
+          "sodium": "370mg"
+        }
+      }
+    },
+    {
+      "id": "15",
+      "name": "Pasta with spicy rosée vegetable sauce and parmesan",
+      "url": "https://www.wecookmeals.ca/en/week-menu/2024-07-07/15-pasta-with-spicy-rosee-vegetable-sauce-and-parmesan-2",
+      "servings": {
+        "small": {
+          "calories": "450",
+          "fat": "20g",
+          "carbohydrate": "58g",
+          "protein": "15g",
+          "cholesterol": "55mg",
+          "sodium": "420mg"
+        },
+        "regular": {
+          "calories": "450",
+          "fat": "19g",
+          "carbohydrate": "58g",
+          "protein": "14g",
+          "cholesterol": "55mg",
+          "sodium": "400mg"
+        },
+        "family": {
+          "calories": "450",
+          "fat": "20g",
+          "carbohydrate": "58g",
+          "protein": "15g",
+          "cholesterol": "55mg",
+          "sodium": "400mg"
+        }
+      }
+    }
+  ]
+}
