@@ -1,9 +1,9 @@
 import ora from 'ora'
 import { createInterface } from 'readline'
 import { mealServices } from './config.js'
-import { factorScrapeMenuLinksByPeriod, factorScrapeNutritionFacts, newWeCookScrapeMenu, weCookScrapeMenuLinksByDate } from './scrapers/index.js'
+import { factorScrapeMenuLinksByPeriod, factorScrapeNutritionFacts, weCookScrapeMenu, weCookScrapeMenuLinksByDate } from './scrapers/index.js'
 import { saveToJsonFile } from './services/fileService.js'
-import { getMondaysOfMonth } from './utils/index.js'
+import { getSundaysOfMonth } from './utils/index.js'
 
 const rl = createInterface({
   input: process.stdin,
@@ -15,54 +15,76 @@ const rl = createInterface({
  * @param {string} question - The question to prompt the user with.
  * @returns {Promise<string>} A promise that resolves with the user's response.
  */
-const askQuestion = (question) => new Promise(resolve => rl.question(question, resolve))
+const promptUser = (question) => {
+  return new Promise(resolve => rl.question(question, resolve))
+}
 
 /**
- * Validates and returns valid Monday dates from a given array of date strings.
- * @param {Array<string>} dateStrs - Array of date strings to validate.
- * @param {string} format - The date format ('weCookMeals' or 'factorMeals').
- * @returns {Array<string>} An array of valid Monday dates.
+ * Transforms a given date to the closest Sunday.
+ * @param {string} dateStr - The date string in YYYY-MM-DD format.
+ * @returns {string} The date string of the closest Sunday in YYYY-MM-DD format.
  */
-const getValidMondays = (dateStrs, format) => {
-  if (format === 'weCookMeals') {
-    return dateStrs.filter(dateStr => {
-      return true
-    })
-  } else if (format === 'factorMeals') {
-    const factorDateRegex = /^\d{4}-W\d{2}$/
-    return dateStrs.filter(dateStr => {
-      if (!factorDateRegex.test(dateStr)) {
-        console.error(`Invalid factor date format: ${dateStr}`)
-        return false
-      }
-      return true
-    })
+const getClosestSunday = (dateStr) => {
+  const date = new Date(dateStr + 'T00:00:00-04:00') // EDT offset
+  const dayOfWeek = date.getUTCDay()
+  const diffToSunday = dayOfWeek
+  date.setUTCDate(date.getUTCDate() - diffToSunday)
+  return date.toISOString().split('T')[0]
+}
+
+/**
+ * Calculates the week number of the year for a given date.
+ * @param {Date} date - The date for which to calculate the week number.
+ * @returns {string} The week number in YYYY-W## format.
+ */
+const getWeekFormat = (date) => {
+  const year = date.getFullYear()
+  const startOfYear = new Date(year, 0, 1)
+  const pastDaysOfYear = (date.getTime() - startOfYear.getTime()) / 86400000
+  const weekNumber = Math.ceil((pastDaysOfYear + startOfYear.getDay() + 1) / 7)
+  return `${year}-W${weekNumber.toString().padStart(2, '0')}`
+}
+
+/**
+ * Validates and returns dates in the correct format based on the service format.
+ * @param {string[]} dateStrs - Array of date strings to validate.
+ * @param {string} serviceFormat - The service format ('weCookMeals' or 'factorMeals').
+ * @returns {string[]} An array of dates in the correct format.
+ */
+const transformDates = (dateStrs, serviceFormat) => {
+  switch (serviceFormat) {
+    case 'weCookMeals':
+      return dateStrs.map(getClosestSunday)
+    case 'factorMeals':
+      return dateStrs.map(dateStr => getWeekFormat(new Date(dateStr)))
+    default:
+      console.error('Invalid service format.')
+      return []
   }
 }
 
 /**
- * Converts a standard date format (YYYY-MM-DD) to the factor format (YYYY-W##).
- * @param {string} dateStr - The date string to convert.
- * @returns {string} The converted date string in factor format.
+ * Prompts the user to select a meal service to scrape.
+ *
+ * @returns {Promise<Object>} A promise that resolves with the selected meal service.
+ * @throws Will exit the process if an invalid option is selected.
  */
-const convertToFactorFormat = (dateStr) => {
-  const date = new Date(dateStr)
-  const year = date.getFullYear()
-  const week = Math.ceil((((date - new Date(year, 0, 1)) / 86400000) + new Date(year, 0, 1).getDay() + 1) / 7)
-  return `${year}-W${week.toString().padStart(2, '0')}`
-}
-
 const selectServiceToScrape = async () => {
   const services = Object.values(mealServices)
-  console.log('Select a service to scrape:')
-  services.forEach((service, index) => console.log(`${index + 1}. ${service.name}`))
 
-  const choice = await askQuestion(`Enter option number (1-${services.length}): `)
-  const selectedServiceIndex = parseInt(choice.trim()) - 1
-  if (isNaN(selectedServiceIndex) || selectedServiceIndex < 0 || selectedServiceIndex >= services.length) {
+  console.log('Select a service to scrape:')
+  services.forEach((service, index) => {
+    console.log(`${index + 1}. ${service.name}`)
+  })
+
+  const choice = await promptUser(`Enter option number (1-${services.length}): `)
+  const selectedServiceIndex = parseInt(choice.trim(), 10) - 1
+
+  if (!Number.isInteger(selectedServiceIndex) || selectedServiceIndex < 0 || selectedServiceIndex >= services.length) {
     console.error('Invalid option.')
     process.exit(1)
   }
+
   return services[selectedServiceIndex]
 }
 
@@ -71,28 +93,19 @@ const selectServiceToScrape = async () => {
  * @returns {Promise<Array<string>>} A promise that resolves with an array of dates to scrape.
  */
 const collectDatesToScrape = async (service) => {
-  const commandLineArgs = process.argv.slice(2)
-  const dateFormat = service.name === 'Factor Meals' ? 'factorMeals' : 'weCookMeals'
+  const serviceFormat = service.name === 'Factor Meals' ? 'factorMeals' : 'weCookMeals'
 
-  if (commandLineArgs.length > 0) {
-    return getValidMondays(commandLineArgs, dateFormat)
-  }
-
-  const choice = await askQuestion('Select option:\n1. Run for a specific date\n2. Run for the current and next month\nEnter option number (1 or 2): ')
+  const choice = await promptUser('Select option:\n1. Run for a specific date.\n2. Run for the current month.\nEnter option number (1 or 2): ')
   switch (choice.trim()) {
     case '1': {
-      const specificDates = await askQuestion('Enter Monday dates separated by space with the format YYYY-MM-DD (e.g. 2021-08-02 2021-08-09): ')
-      return getValidMondays(specificDates.split(' '), dateFormat)
+      const specificDates = await promptUser('Enter dates separated by space with the format YYYY-MM-DD (e.g. 2024-08-02 2024-08-09): ')
+      return transformDates(specificDates.split(' '), serviceFormat)
     }
 
     case '2': {
       const currentDate = new Date()
-      const mondays = getMondaysOfMonth(currentDate.getFullYear(), currentDate.getMonth())
-        .concat(getMondaysOfMonth(currentDate.getFullYear(), currentDate.getMonth() + 1))
-      if (dateFormat === 'factorMeals') {
-        return mondays.map(convertToFactorFormat)
-      }
-      return mondays
+      const mondays = getSundaysOfMonth(currentDate.getFullYear(), currentDate.getMonth())
+      return transformDates(mondays, serviceFormat)
     }
     default: {
       console.error('Invalid option.')
@@ -122,10 +135,10 @@ const orchestrateScraping = async (datesToScrape, serviceName) => {
         continue
       }
 
-      const scrapeMenu = serviceName === 'Factor Meals' ? factorScrapeNutritionFacts : newWeCookScrapeMenu
+      const scrapeMenu = serviceName === 'Factor Meals' ? factorScrapeNutritionFacts : weCookScrapeMenu
       const weekMenus = await Promise.all(weekMenuUrls.map(scrapeMenu))
       await saveToJsonFile(serviceName.toLowerCase(), `weekMenuData-${date}.json`, { date, numberOfWeekMenus: weekMenus.length, weekMenus })
-      spinner.succeed(`Scraping completed for ${date}. \nData saved to weekMenuData-${date}.json`)
+      spinner.succeed(`Scraping completed for ${date}.`)
     }
   } catch (error) {
     spinner.fail('Scraping process failed.')
@@ -142,9 +155,12 @@ const main = async () => {
   try {
     const service = await selectServiceToScrape()
     const datesToScrape = await collectDatesToScrape(service)
+
+    console.log(datesToScrape)
+
     if (datesToScrape.length === 0) {
       console.error('No valid dates to scrape. Exiting.')
-      return
+      process.exit(1)
     }
     await orchestrateScraping(datesToScrape, service.name)
   } catch (error) {
